@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">303221978993-mvtcg0ih2p54qprs2uob25tf5ke8fdvk.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">303221978993</string>
+    <string name="google_api_key" translatable="false">AIzaSyBuZdJLejnlUZVOfOUPDWhQrU7xY92-K6c</string>
+    <string name="google_app_id" translatable="false">1:303221978993:android:879c9515ec201c7f3fe8d0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBuZdJLejnlUZVOfOUPDWhQrU7xY92-K6c</string>
+    <string name="google_storage_bucket" translatable="false">unimity-mtn.appspot.com</string>
+    <string name="project_id" translatable="false">unimity-mtn</string>
+</resources>

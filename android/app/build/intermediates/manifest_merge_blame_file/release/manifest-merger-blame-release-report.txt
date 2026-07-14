@@ -1,0 +1,1030 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.comviva.demo"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:4:5-79
+11-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:5:5-67
+12-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:6:5-64
+13-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:6:22-62
+14    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+14-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:7:5-72
+14-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:7:22-69
+15    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+15-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:8:5-74
+15-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:8:22-71
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:9:5-79
+16-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:11:5-80
+17-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:11:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:12:5-81
+18-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+19-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:13:5-88
+19-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:13:22-85
+20    <uses-permission android:name="android.permission.READ_CONTACTS" />
+20-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:15:5-72
+20-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:15:22-69
+21
+22    <uses-feature
+22-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:17:5-85
+23        android:name="android.hardware.camera"
+23-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:17:19-57
+24        android:required="false" />
+24-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:17:58-82
+25    <uses-feature
+25-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:18:5-91
+26        android:name="android.hardware.camera.front"
+26-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:18:19-63
+27        android:required="false" />
+27-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:18:64-88
+28
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->[:react-native-community_netinfo] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-76
+29-->[:react-native-community_netinfo] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-73
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-68
+30-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-65
+31
+32    <queries>
+32-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:5-22:15
+33        <intent>
+33-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:18
+34            <action android:name="android.intent.action.VIEW" />
+34-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-65
+34-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:21-62
+35
+36            <category android:name="android.intent.category.BROWSABLE" />
+36-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-74
+36-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:23-71
+37
+38            <data android:scheme="https" />
+38-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+38-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:19-41
+39        </intent>
+40        <intent>
+40-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:18
+41            <action android:name="android.media.action.IMAGE_CAPTURE" />
+41-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-73
+41-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:21-70
+42        </intent>
+43        <intent>
+43-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/6f8964f9d4ed7278a0fa279153585c6d/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml:15:9-19:18
+44            <action android:name="android.intent.action.VIEW" />
+44-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-65
+44-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:21-62
+45
+46            <data android:scheme="https" />
+46-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+46-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:19-41
+47        </intent> <!-- End of browser content -->
+48        <!-- For CustomTabsService -->
+49        <intent>
+49-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:40:9-42:18
+50            <action android:name="android.support.customtabs.action.CustomTabsService" />
+50-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:41:13-90
+50-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:41:21-87
+51        </intent>
+52        <intent>
+52-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:25:9-27:18
+53            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+53-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:26:13-86
+53-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:26:21-83
+54        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+55        <package android:name="com.google.android.apps.maps" />
+55-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+55-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+56    </queries>
+57
+58    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+58-->[:react-native-maps] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-81
+58-->[:react-native-maps] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-78
+59    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required to access Google Play Licensing -->
+59-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-77
+59-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-74
+60    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+60-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-73
+60-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-70
+61    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+61-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:28:5-82
+61-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:28:22-79
+62    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+62-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:25:5-79
+62-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:25:22-76
+63    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+63-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:5-110
+63-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:22-107
+64
+65    <uses-feature
+65-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+66        android:glEsVersion="0x00020000"
+66-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+67        android:required="true" />
+67-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+68
+69    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+69-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+69-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+70
+71    <application
+71-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:20:5-45:19
+72        android:name="com.comviva.demo.MainApplication"
+72-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:21:7-38
+73        android:allowBackup="false"
+73-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:24:7-34
+74        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+74-->[androidx.core:core:1.7.0] /Users/unimitydev/.gradle/caches/transforms-3/e543d7ff5959a333aa3537164688485c/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+75        android:icon="@mipmap/ic_launcher"
+75-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:23:7-41
+76        android:label="@string/app_name"
+76-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:22:7-39
+77        android:theme="@style/AppTheme"
+77-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:25:7-38
+78        android:usesCleartextTraffic="true" >
+78-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:26:7-42
+79        <activity
+79-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:27:7-40:18
+80            android:name="com.comviva.demo.MainActivity"
+80-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:28:9-37
+81            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+81-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:31:9-118
+82            android:exported="true"
+82-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:34:9-32
+83            android:label="@string/app_name"
+83-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:29:9-41
+84            android:launchMode="singleTask"
+84-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:32:9-40
+85            android:theme="@style/SplashTheme"
+85-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:30:9-43
+86            android:windowSoftInputMode="adjustResize" >
+86-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:33:9-51
+87            <intent-filter>
+87-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:35:9-39:25
+88                <action android:name="android.intent.action.MAIN" />
+88-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:36:13-65
+88-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:36:21-62
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:37:13-73
+90-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:37:23-70
+91
+92                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+92-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:38:13-77
+92-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:38:21-75
+93            </intent-filter>
+94        </activity>
+95
+96        <meta-data
+96-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:42:7-44:63
+97            android:name="com.google.android.geo.API_KEY"
+97-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:43:5-50
+98            android:value="AIzaSyC2zkwJbikhDYdc9bXKMh1vWNMtaL4LolA" />
+98-->/Users/unimitydev/Downloads/IOH_BACKUP/android/app/src/main/AndroidManifest.xml:44:5-60
+99        <meta-data
+99-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-16:36
+100            android:name="firebase_analytics_collection_enabled"
+100-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-65
+101            android:value="true" />
+101-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-33
+102        <meta-data
+102-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-19:37
+103            android:name="firebase_analytics_collection_deactivated"
+103-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-69
+104            android:value="false" />
+104-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-34
+105        <meta-data
+105-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-22:36
+106            android:name="google_analytics_adid_collection_enabled"
+106-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-68
+107            android:value="true" />
+107-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-33
+108        <meta-data
+108-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-25:36
+109            android:name="google_analytics_ssaid_collection_enabled"
+109-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-69
+110            android:value="true" />
+110-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-33
+111        <meta-data
+111-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-28:36
+112            android:name="google_analytics_default_allow_ad_personalization_signals"
+112-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-85
+113            android:value="true" />
+113-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-33
+114        <meta-data
+114-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-31:36
+115            android:name="google_analytics_automatic_screen_reporting_enabled"
+115-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-79
+116            android:value="true" /> <!-- Disable crashlytics by default so we can custom init with CrashlyticsNdk support -->
+116-->[:react-native-firebase_analytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/analytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-33
+117        <meta-data
+117-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:37
+118            android:name="firebase_crashlytics_collection_enabled"
+118-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-67
+119            android:value="false" />
+119-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-34
+120
+121        <provider
+121-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-20:38
+122            android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider"
+122-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-104
+123            android:authorities="com.comviva.demo.reactnativefirebasecrashlyticsinitprovider"
+123-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-94
+124            android:exported="false"
+124-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
+125            android:initOrder="98" />
+125-->[:react-native-firebase_crashlytics] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/crashlytics/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-35
+126
+127        <meta-data
+127-->[:react-native-firebase_in-app-messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:36
+128            android:name="in_app_messaging_auto_collection_enabled"
+128-->[:react-native-firebase_in-app-messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-68
+129            android:value="true" />
+129-->[:react-native-firebase_in-app-messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-33
+130
+131        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
+131-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-111
+131-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-108
+132        <service
+132-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
+133            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+133-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
+134            android:exported="false" >
+134-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+135            <intent-filter>
+135-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+136                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+136-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+136-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+137            </intent-filter>
+138        </service>
+139
+140        <receiver
+140-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
+141            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+141-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
+142            android:exported="true"
+142-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
+143            android:permission="com.google.android.c2dm.permission.SEND" >
+143-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+144            <intent-filter>
+144-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+145                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+145-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+145-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+146            </intent-filter>
+147        </receiver>
+148
+149        <meta-data
+149-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+150            android:name="firebase_messaging_auto_init_enabled"
+150-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+151            android:value="true" />
+151-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+152        <meta-data
+152-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+153            android:name="com.google.firebase.messaging.default_notification_channel_id"
+153-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+154            android:value="" />
+154-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+155        <meta-data
+155-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
+156            android:name="com.google.firebase.messaging.default_notification_color"
+156-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
+157            android:resource="@color/white" />
+157-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
+158        <meta-data
+158-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:36
+159            android:name="firebase_performance_collection_enabled"
+159-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-67
+160            android:value="true" />
+160-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-33
+161        <meta-data
+161-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-15:37
+162            android:name="firebase_performance_collection_deactivated"
+162-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-71
+163            android:value="false" />
+163-->[:react-native-firebase_perf] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/perf/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-34
+164        <meta-data
+164-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:36
+165            android:name="app_data_collection_default_enabled"
+165-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-63
+166            android:value="true" />
+166-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-33
+167
+168        <service
+168-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-18:19
+169            android:name="com.google.firebase.components.ComponentDiscoveryService"
+169-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-89
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+171            android:exported="false" >
+171-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/6f8964f9d4ed7278a0fa279153585c6d/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml:25:13-37
+172            <meta-data
+172-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:85
+173                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+173-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-120
+174                android:value="com.google.firebase.components.ComponentRegistrar" />
+174-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-82
+175            <meta-data
+175-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/6f8964f9d4ed7278a0fa279153585c6d/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml:26:13-28:85
+176                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+176-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/6f8964f9d4ed7278a0fa279153585c6d/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml:27:17-144
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/6f8964f9d4ed7278a0fa279153585c6d/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml:28:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:23:13-25:85
+179                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+179-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:24:17-109
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:25:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-inappmessaging:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/c1dd83a80726b5618ab9ff8729f59e87/transformed/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:17:13-19:85
+182                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+182-->[com.google.firebase:firebase-inappmessaging:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/c1dd83a80726b5618ab9ff8729f59e87/transformed/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:18:17-129
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-inappmessaging:20.1.2] /Users/unimitydev/.gradle/caches/transforms-3/c1dd83a80726b5618ab9ff8729f59e87/transformed/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:19:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:55:13-57:85
+185                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+185-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:56:17-119
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:57:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-crashlytics-ndk:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/00c106c1c938800e99f8f5dde1f5f26e/transformed/jetified-firebase-crashlytics-ndk-18.2.11/AndroidManifest.xml:35:13-37:85
+188                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+188-->[com.google.firebase:firebase-crashlytics-ndk:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/00c106c1c938800e99f8f5dde1f5f26e/transformed/jetified-firebase-crashlytics-ndk-18.2.11/AndroidManifest.xml:36:17-122
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-crashlytics-ndk:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/00c106c1c938800e99f8f5dde1f5f26e/transformed/jetified-firebase-crashlytics-ndk-18.2.11/AndroidManifest.xml:37:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-crashlytics:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/e2c7dd6247a7ae8cb87583ee5be1a5c6/transformed/jetified-firebase-crashlytics-18.2.11/AndroidManifest.xml:18:13-20:85
+191                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+191-->[com.google.firebase:firebase-crashlytics:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/e2c7dd6247a7ae8cb87583ee5be1a5c6/transformed/jetified-firebase-crashlytics-18.2.11/AndroidManifest.xml:19:17-115
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-crashlytics:18.2.11] /Users/unimitydev/.gradle/caches/transforms-3/e2c7dd6247a7ae8cb87583ee5be1a5c6/transformed/jetified-firebase-crashlytics-18.2.11/AndroidManifest.xml:20:17-82
+193            <meta-data
+193-->[com.google.firebase:firebase-datatransport:18.1.4] /Users/unimitydev/.gradle/caches/transforms-3/556339465f9deebb6d582af1e5105eaf/transformed/jetified-firebase-datatransport-18.1.4/AndroidManifest.xml:28:13-30:85
+194                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+194-->[com.google.firebase:firebase-datatransport:18.1.4] /Users/unimitydev/.gradle/caches/transforms-3/556339465f9deebb6d582af1e5105eaf/transformed/jetified-firebase-datatransport-18.1.4/AndroidManifest.xml:29:17-115
+195                android:value="com.google.firebase.components.ComponentRegistrar" />
+195-->[com.google.firebase:firebase-datatransport:18.1.4] /Users/unimitydev/.gradle/caches/transforms-3/556339465f9deebb6d582af1e5105eaf/transformed/jetified-firebase-datatransport-18.1.4/AndroidManifest.xml:30:17-82
+196            <meta-data
+196-->[com.google.firebase:firebase-config:21.1.0] /Users/unimitydev/.gradle/caches/transforms-3/757dd473c0e2aa0d717b376ac9e942a4/transformed/jetified-firebase-config-21.1.0/AndroidManifest.xml:32:13-34:85
+197                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+197-->[com.google.firebase:firebase-config:21.1.0] /Users/unimitydev/.gradle/caches/transforms-3/757dd473c0e2aa0d717b376ac9e942a4/transformed/jetified-firebase-config-21.1.0/AndroidManifest.xml:33:17-117
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.firebase:firebase-config:21.1.0] /Users/unimitydev/.gradle/caches/transforms-3/757dd473c0e2aa0d717b376ac9e942a4/transformed/jetified-firebase-config-21.1.0/AndroidManifest.xml:34:17-82
+199            <meta-data
+199-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a3a613f4e4f985e69173e65a4649609d/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
+200                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+200-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a3a613f4e4f985e69173e65a4649609d/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
+201                android:value="com.google.firebase.components.ComponentRegistrar" />
+201-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a3a613f4e4f985e69173e65a4649609d/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
+202            <meta-data
+202-->[com.google.firebase:firebase-installations:17.0.1] /Users/unimitydev/.gradle/caches/transforms-3/1e0ef205beb1dbfdbc4ddbf7c7840743/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+203                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+203-->[com.google.firebase:firebase-installations:17.0.1] /Users/unimitydev/.gradle/caches/transforms-3/1e0ef205beb1dbfdbc4ddbf7c7840743/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+204                android:value="com.google.firebase.components.ComponentRegistrar" />
+204-->[com.google.firebase:firebase-installations:17.0.1] /Users/unimitydev/.gradle/caches/transforms-3/1e0ef205beb1dbfdbc4ddbf7c7840743/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+205            <meta-data
+205-->[com.google.firebase:firebase-abt:21.0.1] /Users/unimitydev/.gradle/caches/transforms-3/55af47ade8734edc273f702cfac6ec6b/transformed/jetified-firebase-abt-21.0.1/AndroidManifest.xml:13:13-15:85
+206                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+206-->[com.google.firebase:firebase-abt:21.0.1] /Users/unimitydev/.gradle/caches/transforms-3/55af47ade8734edc273f702cfac6ec6b/transformed/jetified-firebase-abt-21.0.1/AndroidManifest.xml:14:17-109
+207                android:value="com.google.firebase.components.ComponentRegistrar" />
+207-->[com.google.firebase:firebase-abt:21.0.1] /Users/unimitydev/.gradle/caches/transforms-3/55af47ade8734edc273f702cfac6ec6b/transformed/jetified-firebase-abt-21.0.1/AndroidManifest.xml:15:17-82
+208        </service>
+209
+210        <provider
+210-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-24:38
+211            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+211-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-88
+212            android:authorities="com.comviva.demo.reactnativefirebaseappinitprovider"
+212-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-86
+213            android:exported="false"
+213-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-37
+214            android:initOrder="99" />
+214-->[:react-native-firebase_app] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-35
+215
+216        <activity
+216-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-29:75
+217            android:name="com.auth0.react.AuthenticationActivity"
+217-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-66
+218            android:exported="false"
+218-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-37
+219            android:launchMode="singleTask"
+219-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-44
+220            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+220-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-72
+221        <activity
+221-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:30:9-46:20
+222            android:name="com.auth0.react.RedirectActivity"
+222-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-60
+223            android:exported="true" >
+223-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-36
+224            <intent-filter android:autoVerify="true" >
+224-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-45:29
+224-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:17-42
+225                <action android:name="android.intent.action.VIEW" />
+225-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-65
+225-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:21-62
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:17-76
+227-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-74
+228-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:23-71
+229
+230                <data
+230-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+231                    android:host="dev-ub055fhs.us.auth0.com"
+232                    android:pathPrefix="/android/com.comviva.demo/callback"
+233                    android:scheme="com.comviva.demo" />
+233-->[:react-native-auth0] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-auth0/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:19-41
+234            </intent-filter>
+235        </activity>
+236
+237        <meta-data
+237-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-16:70
+238            android:name="com.google.android.gms.ads.APPLICATION_ID"
+238-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-69
+239            android:value="ca-app-pub-4744892452629867~9171731091" />
+239-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-67
+240        <meta-data
+240-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-19:37
+241            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+241-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-81
+242            android:value="false" />
+242-->[:react-native-google-mobile-ads] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-google-mobile-ads/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-34
+243
+244        <provider
+244-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-26:20
+245            android:name="androidx.core.content.FileProvider"
+245-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-62
+246            android:authorities="com.comviva.demo.provider"
+246-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-60
+247            android:exported="false"
+247-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+248            android:grantUriPermissions="true" >
+248-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-47
+249            <meta-data
+249-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:58
+250                android:name="android.support.FILE_PROVIDER_PATHS"
+250-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-67
+251                android:resource="@xml/provider_paths" />
+251-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-55
+252        </provider>
+253
+254        <activity
+254-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-30:72
+255            android:name="com.yalantis.ucrop.UCropActivity"
+255-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-60
+256            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- The main service, handles playback, playlists and media buttons -->
+256-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-69
+257        <service
+257-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-22:19
+258            android:name="com.doublesymmetry.trackplayer.service.MusicService"
+258-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-79
+259            android:enabled="true"
+259-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-35
+260            android:exported="false" >
+260-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+261            <intent-filter>
+261-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-21:29
+262                <action android:name="android.intent.action.MEDIA_BUTTON" />
+262-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-77
+262-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:25-74
+263            </intent-filter>
+264        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
+265        <receiver
+265-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-31:20
+266            android:name="androidx.media.session.MediaButtonReceiver"
+266-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-70
+267            android:exported="true" >
+267-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-36
+268            <intent-filter>
+268-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-21:29
+269                <action android:name="android.intent.action.MEDIA_BUTTON" />
+269-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-77
+269-->[:react-native-track-player] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:25-74
+270            </intent-filter>
+271        </receiver>
+272
+273        <provider
+273-->[:react-native-webview] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+274            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+274-->[:react-native-webview] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-83
+275            android:authorities="com.comviva.demo.fileprovider"
+275-->[:react-native-webview] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
+276            android:exported="false"
+276-->[:react-native-webview] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+277            android:grantUriPermissions="true" >
+277-->[:react-native-webview] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+278            <meta-data
+278-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:58
+279                android:name="android.support.FILE_PROVIDER_PATHS"
+279-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-67
+280                android:resource="@xml/file_provider_paths" />
+280-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-55
+281        </provider>
+282        <provider
+282-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-42:20
+283            android:name="com.RNFetchBlob.Utils.FileProvider"
+283-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-62
+284            android:authorities="com.comviva.demo.provider"
+284-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-60
+285            android:exported="false"
+285-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-37
+286            android:grantUriPermissions="true" >
+286-->[:rn-fetch-blob] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-47
+287            <meta-data
+287-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:58
+288                android:name="android.support.FILE_PROVIDER_PATHS"
+288-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-67
+289                android:resource="@xml/provider_paths" />
+289-->[:react-native-image-crop-picker] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-55
+290        </provider>
+291        <provider
+291-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:14:9-18:39
+292            android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+292-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:15:13-82
+293            android:authorities="com.comviva.demo.firebaseperfprovider"
+293-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:16:13-72
+294            android:exported="false"
+294-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:17:13-37
+295            android:initOrder="101" />
+295-->[com.google.firebase:firebase-perf:20.1.0] /Users/unimitydev/.gradle/caches/transforms-3/6af92ca58b633285de992be6643b0c02/transformed/jetified-firebase-perf-20.1.0/AndroidManifest.xml:18:13-36
+296
+297        <receiver
+297-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:31:9-38:20
+298            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+298-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:32:13-78
+299            android:exported="true"
+299-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:33:13-36
+300            android:permission="com.google.android.c2dm.permission.SEND" >
+300-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:34:13-73
+301            <intent-filter>
+301-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+302                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+302-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+302-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+303            </intent-filter>
+304        </receiver>
+305        <!--
+306             FirebaseMessagingService performs security checks at runtime,
+307             but set to not exported to explicitly avoid allowing another app to call it.
+308        -->
+309        <service
+309-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:44:9-51:19
+310            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+310-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:45:13-82
+311            android:directBootAware="true"
+311-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:46:13-43
+312            android:exported="false" >
+312-->[com.google.firebase:firebase-messaging:23.0.5] /Users/unimitydev/.gradle/caches/transforms-3/96575689cd270f00d7b7f806df4f4fdd/transformed/jetified-firebase-messaging-23.0.5/AndroidManifest.xml:47:13-37
+313            <intent-filter android:priority="-500" >
+313-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+314                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+314-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+314-->[:react-native-firebase_messaging] /Users/unimitydev/Downloads/IOH_BACKUP/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+315            </intent-filter>
+316        </service>
+317        <service
+317-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:9:9-15:19
+318            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+318-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:10:13-91
+319            android:directBootAware="true"
+319-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:17:13-43
+320            android:exported="false" >
+320-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:11:13-37
+321            <meta-data
+321-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:12:13-14:85
+322                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+322-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:13:17-120
+323                android:value="com.google.firebase.components.ComponentRegistrar" />
+323-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/unimitydev/.gradle/caches/transforms-3/2129e2a26aa23eb4d7a4cf7e1e322c2b/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:14:17-82
+324            <meta-data
+324-->[com.google.mlkit:vision-common:16.5.0] /Users/unimitydev/.gradle/caches/transforms-3/1297d2cca86f0c6af501928e25b87534/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+325                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+325-->[com.google.mlkit:vision-common:16.5.0] /Users/unimitydev/.gradle/caches/transforms-3/1297d2cca86f0c6af501928e25b87534/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+326                android:value="com.google.firebase.components.ComponentRegistrar" />
+326-->[com.google.mlkit:vision-common:16.5.0] /Users/unimitydev/.gradle/caches/transforms-3/1297d2cca86f0c6af501928e25b87534/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+327            <meta-data
+327-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:20:13-22:85
+328                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+328-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:21:17-120
+329                android:value="com.google.firebase.components.ComponentRegistrar" />
+329-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:22:17-82
+330        </service>
+331
+332        <provider
+332-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:9:9-13:38
+333            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+333-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:10:13-78
+334            android:authorities="com.comviva.demo.mlkitinitprovider"
+334-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:11:13-69
+335            android:exported="false"
+335-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:12:13-37
+336            android:initOrder="99" />
+336-->[com.google.mlkit:common:17.3.0] /Users/unimitydev/.gradle/caches/transforms-3/3260345d0265813f97bf82effd6f116e/transformed/jetified-common-17.3.0/AndroidManifest.xml:13:13-35
+337
+338        <service
+338-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:29:9-35:19
+339            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+339-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:30:13-103
+340            android:exported="false" >
+340-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:31:13-37
+341            <meta-data
+341-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:32:13-34:39
+342                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+342-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:33:17-94
+343                android:value="cct" />
+343-->[com.google.android.datatransport:transport-backend-cct:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/a6d3d353adb123e70c8f46f24246641e/transformed/jetified-transport-backend-cct-3.1.5/AndroidManifest.xml:34:17-36
+344        </service>
+345        <service
+345-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:26:9-30:19
+346            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+346-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:27:13-117
+347            android:exported="false"
+347-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:28:13-37
+348            android:permission="android.permission.BIND_JOB_SERVICE" >
+348-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:29:13-69
+349        </service>
+350
+351        <receiver
+351-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:32:9-34:40
+352            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+352-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:33:13-132
+353            android:exported="false" />
+353-->[com.google.android.datatransport:transport-runtime:3.1.5] /Users/unimitydev/.gradle/caches/transforms-3/7498e3f9210c7cc92284850075f0b5c7/transformed/jetified-transport-runtime-3.1.5/AndroidManifest.xml:34:13-37
+354
+355        <meta-data
+355-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/unimitydev/.gradle/caches/transforms-3/5049036002cc12860b3c3f20d18646ad/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+356            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+356-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/unimitydev/.gradle/caches/transforms-3/5049036002cc12860b3c3f20d18646ad/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+357            android:value="GlideModule" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+357-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/unimitydev/.gradle/caches/transforms-3/5049036002cc12860b3c3f20d18646ad/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+358        <activity
+358-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:49:9-53:64
+359            android:name="com.google.android.gms.ads.AdActivity"
+359-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:50:13-65
+360            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+360-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:51:13-122
+361            android:exported="false"
+361-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:52:13-37
+362            android:theme="@android:style/Theme.Translucent" />
+362-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:53:13-61
+363
+364        <provider
+364-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:55:9-59:39
+365            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+365-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:56:13-76
+366            android:authorities="com.comviva.demo.mobileadsinitprovider"
+366-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:57:13-73
+367            android:exported="false"
+367-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:58:13-37
+368            android:initOrder="100" />
+368-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:59:13-36
+369
+370        <service
+370-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:61:9-64:40
+371            android:name="com.google.android.gms.ads.AdService"
+371-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:62:13-64
+372            android:enabled="true"
+372-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:63:13-35
+373            android:exported="false" />
+373-->[com.google.android.gms:play-services-ads-lite:20.6.0] /Users/unimitydev/.gradle/caches/transforms-3/c34e142dbab9ca8a43cef2c43c31b418/transformed/jetified-play-services-ads-lite-20.6.0/AndroidManifest.xml:64:13-37
+374
+375        <receiver
+375-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
+376            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+376-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
+377            android:enabled="true"
+377-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
+378            android:exported="false" >
+378-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
+379        </receiver>
+380
+381        <service
+381-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
+382            android:name="com.google.android.gms.measurement.AppMeasurementService"
+382-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
+383            android:enabled="true"
+383-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
+384            android:exported="false" />
+384-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
+385        <service
+385-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
+386            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+386-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
+387            android:enabled="true"
+387-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
+388            android:exported="false"
+388-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
+389            android:permission="android.permission.BIND_JOB_SERVICE" />
+389-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/unimitydev/.gradle/caches/transforms-3/a4f1acb98a798f689ea4c8092ba8ffb8/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
+390
+391        <uses-library
+391-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:31:9-33:40
+392            android:name="androidx.camera.extensions.impl"
+392-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:32:13-59
+393            android:required="false" />
+393-->[androidx.camera:camera-extensions:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/f66b9a0763bd38310919baf4eb42e6f9/transformed/jetified-camera-extensions-1.1.0-beta02/AndroidManifest.xml:33:13-37
+394
+395        <service
+395-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:26:9-35:19
+396            android:name="androidx.camera.core.impl.MetadataHolderService"
+396-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:27:13-75
+397            android:enabled="false"
+397-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:28:13-36
+398            android:exported="false" >
+398-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:29:13-37
+399            <meta-data
+399-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:32:13-34:89
+400                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+400-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:33:17-103
+401                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+401-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/unimitydev/.gradle/caches/transforms-3/60f646f6b9130e260838806d7f2c2033/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:34:17-86
+402        </service>
+403
+404        <activity
+404-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:23:9-27:75
+405            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+405-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:24:13-93
+406            android:excludeFromRecents="true"
+406-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:25:13-46
+407            android:exported="false"
+407-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:26:13-37
+408            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+408-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:27:13-72
+409        <!--
+410            Service handling Google Sign-In user revocation. For apps that do not integrate with
+411            Google Sign-In, this service will never be started.
+412        -->
+413        <service
+413-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:33:9-37:51
+414            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+414-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:34:13-89
+415            android:exported="true"
+415-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:35:13-36
+416            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+416-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:36:13-107
+417            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+417-->[com.google.android.gms:play-services-auth:20.2.0] /Users/unimitydev/.gradle/caches/transforms-3/ac1b6b74c09851596044b0d92660ffe8/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:37:13-48
+418        <uses-library
+418-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+419            android:name="org.apache.http.legacy"
+419-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+420            android:required="false" />
+420-->[com.google.android.gms:play-services-maps:18.0.2] /Users/unimitydev/.gradle/caches/transforms-3/310904db5eb4e04a1cdbde70b45de5fb/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+421
+422        <activity
+422-->[com.google.android.gms:play-services-base:18.0.1] /Users/unimitydev/.gradle/caches/transforms-3/e81a86ac12ed118c2fd2db5ec42dec11/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+423            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+423-->[com.google.android.gms:play-services-base:18.0.1] /Users/unimitydev/.gradle/caches/transforms-3/e81a86ac12ed118c2fd2db5ec42dec11/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+424            android:exported="false"
+424-->[com.google.android.gms:play-services-base:18.0.1] /Users/unimitydev/.gradle/caches/transforms-3/e81a86ac12ed118c2fd2db5ec42dec11/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+425            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+425-->[com.google.android.gms:play-services-base:18.0.1] /Users/unimitydev/.gradle/caches/transforms-3/e81a86ac12ed118c2fd2db5ec42dec11/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+426
+427        <provider
+427-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+428            android:name="com.google.firebase.provider.FirebaseInitProvider"
+428-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+429            android:authorities="com.comviva.demo.firebaseinitprovider"
+429-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+430            android:directBootAware="true"
+430-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+431            android:exported="false"
+431-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+432            android:initOrder="100" />
+432-->[com.google.firebase:firebase-common:20.1.1] /Users/unimitydev/.gradle/caches/transforms-3/fef586896be74c394b100a77da0a3705/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+433
+434        <meta-data
+434-->[com.google.android.gms:play-services-basement:18.0.0] /Users/unimitydev/.gradle/caches/transforms-3/9f75c359e10f886f5703f40e93cfae16/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+435            android:name="com.google.android.gms.version"
+435-->[com.google.android.gms:play-services-basement:18.0.0] /Users/unimitydev/.gradle/caches/transforms-3/9f75c359e10f886f5703f40e93cfae16/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+436            android:value="@integer/google_play_services_version" />
+436-->[com.google.android.gms:play-services-basement:18.0.0] /Users/unimitydev/.gradle/caches/transforms-3/9f75c359e10f886f5703f40e93cfae16/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+437
+438        <provider
+438-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+439            android:name="androidx.startup.InitializationProvider"
+439-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+440            android:authorities="com.comviva.demo.androidx-startup"
+440-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+441            android:exported="false" >
+441-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+442            <meta-data
+442-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+443                android:name="androidx.work.WorkManagerInitializer"
+443-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+444                android:value="androidx.startup" />
+444-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+445        </provider>
+446
+447        <service
+447-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+448            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+448-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+449            android:directBootAware="false"
+449-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+450            android:enabled="@bool/enable_system_alarm_service_default"
+450-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+451            android:exported="false" />
+451-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+452        <service
+452-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+453            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+453-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+454            android:directBootAware="false"
+454-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+455            android:enabled="@bool/enable_system_job_service_default"
+455-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+456            android:exported="true"
+456-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+457            android:permission="android.permission.BIND_JOB_SERVICE" />
+457-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+458        <service
+458-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+459            android:name="androidx.work.impl.foreground.SystemForegroundService"
+459-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+460            android:directBootAware="false"
+460-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+461            android:enabled="@bool/enable_system_foreground_service_default"
+461-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+462            android:exported="false" />
+462-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+463
+464        <receiver
+464-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+465            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+465-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+466            android:directBootAware="false"
+466-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+467            android:enabled="true"
+467-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+468            android:exported="false" />
+468-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+469        <receiver
+469-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+470            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+470-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+471            android:directBootAware="false"
+471-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+472            android:enabled="false"
+472-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+473            android:exported="false" >
+473-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+474            <intent-filter>
+474-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+475                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+475-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+475-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+476                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+476-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+476-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+477            </intent-filter>
+478        </receiver>
+479        <receiver
+479-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+480            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+480-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+481            android:directBootAware="false"
+481-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+482            android:enabled="false"
+482-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+483            android:exported="false" >
+483-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+484            <intent-filter>
+484-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+485                <action android:name="android.intent.action.BATTERY_OKAY" />
+485-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+485-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+486                <action android:name="android.intent.action.BATTERY_LOW" />
+486-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+486-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+487            </intent-filter>
+488        </receiver>
+489        <receiver
+489-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+490            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+490-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+491            android:directBootAware="false"
+491-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+492            android:enabled="false"
+492-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+493            android:exported="false" >
+493-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+494            <intent-filter>
+494-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+495                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+495-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+495-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+496                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+496-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+496-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+497            </intent-filter>
+498        </receiver>
+499        <receiver
+499-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+500            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+500-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+501            android:directBootAware="false"
+501-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+502            android:enabled="false"
+502-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+503            android:exported="false" >
+503-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+504            <intent-filter>
+504-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+505                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+505-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+505-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+506            </intent-filter>
+507        </receiver>
+508        <receiver
+508-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+509            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+509-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+510            android:directBootAware="false"
+510-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+511            android:enabled="false"
+511-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+512            android:exported="false" >
+512-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+513            <intent-filter>
+513-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+514                <action android:name="android.intent.action.BOOT_COMPLETED" />
+514-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+514-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+515                <action android:name="android.intent.action.TIME_SET" />
+515-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+515-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+516                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+516-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+516-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+517            </intent-filter>
+518        </receiver>
+519        <receiver
+519-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+520            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+520-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+521            android:directBootAware="false"
+521-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+522            android:enabled="@bool/enable_system_alarm_service_default"
+522-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+523            android:exported="false" >
+523-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+524            <intent-filter>
+524-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+525                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+525-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+525-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+526            </intent-filter>
+527        </receiver>
+528        <receiver
+528-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+529            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+529-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+530            android:directBootAware="false"
+530-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+531            android:enabled="true"
+531-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+532            android:exported="true"
+532-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+533            android:permission="android.permission.DUMP" >
+533-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+534            <intent-filter>
+534-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+535                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+535-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+535-->[androidx.work:work-runtime:2.7.1] /Users/unimitydev/.gradle/caches/transforms-3/3c02556e1893d409a32b698646f153ab/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+536            </intent-filter>
+537        </receiver>
+538
+539        <service
+539-->[androidx.room:room-runtime:2.2.5] /Users/unimitydev/.gradle/caches/transforms-3/d166b1a4176543e2bbfc996eb3096199/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+540            android:name="androidx.room.MultiInstanceInvalidationService"
+540-->[androidx.room:room-runtime:2.2.5] /Users/unimitydev/.gradle/caches/transforms-3/d166b1a4176543e2bbfc996eb3096199/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+541            android:directBootAware="true"
+541-->[androidx.room:room-runtime:2.2.5] /Users/unimitydev/.gradle/caches/transforms-3/d166b1a4176543e2bbfc996eb3096199/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+542            android:exported="false" />
+542-->[androidx.room:room-runtime:2.2.5] /Users/unimitydev/.gradle/caches/transforms-3/d166b1a4176543e2bbfc996eb3096199/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+543    </application>
+544
+545</manifest>

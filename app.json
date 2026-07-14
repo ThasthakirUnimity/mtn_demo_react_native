@@ -1,0 +1,8 @@
+{
+  "name": "MyMTN",
+  "displayName": "My MTN",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-4744892452629867~9171731091",
+    "ios_app_id": "ca-app-pub-4744892452629867~9171731091"
+  }
+}

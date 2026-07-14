@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/drawable_launch_screen22.png.flat",
+        "source": "com.comviva.demo.app-main-61:/drawable/launch_screen22.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/drawable_launch_screen.png.flat",
+        "source": "com.comviva.demo.app-main-61:/drawable/launch_screen.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/layout_launch_screen.xml.flat",
+        "source": "com.comviva.demo.app-main-61:/layout/launch_screen.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.comviva.demo.app-main-61:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-59:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-61:/mipmap-xhdpi/ic_launcher.png"
+    }
+]

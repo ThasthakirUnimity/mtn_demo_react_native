@@ -1,0 +1,1 @@
+{"className":"com.comviva.demo.MainApplication","classAnnotations":[],"interfaces":["android.content.ComponentCallbacks","android.content.ComponentCallbacks2","com.facebook.react.ReactApplication"],"superClasses":["android.app.Application","android.content.ContextWrapper","android.content.Context","java.lang.Object"]}

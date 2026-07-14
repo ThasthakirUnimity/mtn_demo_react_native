@@ -1,0 +1,598 @@
+[
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_playservices.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_playservices.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_bank_hsbc.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_bank_hsbc.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_success.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_success.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnhotlineon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnhotlineon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnfeedback.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnfeedback.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_mail.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_mail.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_assets_images_bg.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/assets_images_bg.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_lock_bg.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_lock_bg.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_legal.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_legal.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnstore.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnstore.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_data.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_data.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_recharge.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_recharge.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_offerspromotion.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_offerspromotion.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_airtime.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_airtime.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_recharge.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_recharge.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable_launch_screen.png.flat",
+        "source": "com.comviva.demo.app-main-57:/drawable/launch_screen.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_transactionhistory.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_transactionhistory.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_bell.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_bell.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_services_music.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_services_music.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnfaqs.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnfaqs.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_lock.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_lock.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btntermsconditionson.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btntermsconditionson.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnchaton.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnchaton.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_security.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_security.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-hdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_alert.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_alert.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_shop_recharge.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_shop_recharge.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_mapstore.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_mapstore.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-hdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-hdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_flutterwavereactnative_dist_assets_prybuttoncontent.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_flutterwavereactnative_dist_assets_prybuttoncontent.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnhotline.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnhotline.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btncomplaintson.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btncomplaintson.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_king.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_king.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btncovid.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btncovid.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_mobile.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_mobile.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_shop_tariffplan.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_shop_tariffplan.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_aboutus.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_aboutus.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnfeedbackon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnfeedbackon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_filters.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_filters.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_bg.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_bg.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_play.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_play.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_helpsupport.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_helpsupport.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_submitnin.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_submitnin.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-hdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_rateapp.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_rateapp.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-hdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-hdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_chatus.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_chatus.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_cashback.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_cashback.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_heart.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_heart.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnfaqson.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnfaqson.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_servicerequest.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_servicerequest.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_assets_images_bg.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/assets_images_bg.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_flutterwavereactnative_dist_assets_loader.gif.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_flutterwavereactnative_dist_assets_loader.gif"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_invities.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_invities.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_planusage.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_planusage.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_language.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_language.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_notification.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_notification.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_logovodafone.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_logovodafone.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_helpcenter.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_helpcenter.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/layout_launch_screen.xml.flat",
+        "source": "com.comviva.demo.app-main-57:/layout/launch_screen.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_spark.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_spark.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_entertainment.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_entertainment.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_storelocator.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_storelocator.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnlegal.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnlegal.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_services_news.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_services_news.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnsubmitninon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnsubmitninon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btncovidon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btncovidon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_btngoogle.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_btngoogle.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_locatemtnstore.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_locatemtnstore.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_productservices.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_productservices.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_services_games.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_services_games.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_shop_bundles.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_shop_bundles.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_call.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_call.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_borrow.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_borrow.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_bundles.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_bundles.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnchat.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnchat.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnlegalon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnlegalon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_logout.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_logout.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_scan.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_scan.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_chatbot.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_chatbot.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.comviva.demo.app-main-57:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_avatardark.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_avatardark.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_avatarlight.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_avatarlight.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_paybills.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_paybills.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_airbnbstarselected.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_airbnbstarselected.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_airbnbstar.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_airbnbstar.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_bulb.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_bulb.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_emoji.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_emoji.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_submitnin.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_submitnin.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_myrewards.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_myrewards.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_mapcurrent.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_mapcurrent.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_addressbook.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_addressbook.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btntermsconditions.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btntermsconditions.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_emergencyrecharge.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_emergencyrecharge.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_send.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_send.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_shop_topup.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_shop_topup.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_storelocator.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_storelocator.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_shareborrow.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_shareborrow.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_star.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_star.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_visa.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_visa.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable_launch_screen22.png.flat",
+        "source": "com.comviva.demo.app-main-57:/drawable/launch_screen22.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnsecurityon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnsecurityon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_leaderboard.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_leaderboard.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_quick_share.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_quick_share.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btncomplaints.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btncomplaints.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_node_modules_reactnativeratings_dist_images_rocket.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/node_modules_reactnativeratings_dist_images_rocket.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_assets_icons_offers.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/assets_icons_offers.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_chatbot.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_chatbot.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_shopping.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_shopping.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_btnapple.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_btnapple.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_mycart.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_mycart.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_btnfacebook.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_btnfacebook.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_pinback.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_pinback.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnsecurity.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnsecurity.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_assets_images_cashback.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/assets_images_cashback.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnstoreon.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnstoreon.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_services_movies.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_services_movies.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btncontact.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btncontact.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_help_btnsubmitnin.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_help_btnsubmitnin.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_pinlock.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_pinlock.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_menu_bundles.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_menu_bundles.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_images_invite.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_images_invite.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/drawable-mdpi_assets_icons_transactiondownload.png.flat",
+        "source": "com.comviva.demo.app-react-51:/drawable-mdpi/assets_icons_transactiondownload.png"
+    },
+    {
+        "merged": "com.comviva.demo.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.comviva.demo.app-main-57:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

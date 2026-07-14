@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.comviva.demo.app-mergeReleaseResources-54:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/unimitydev/.gradle/caches/transforms-3/a26af3a8532acf48a5112e6759ea6dd9/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
