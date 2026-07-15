@@ -89,11 +89,11 @@ class Language extends Component {
               style={styles.langBg}>
               <View style={styles.langTop}>
                 <View style={styles.langLogo}>
-                  <Image
+                  {/* <Image
                     source={require('@asset/images/logo-vodafone.png')}
                     style={styles.langLogoImg}
                     resizeMode="contain"
-                  />
+                  /> */}
                 </View>
                 <View style={styles.langTopRow}>
                   <Text style={styles.langTitle}>

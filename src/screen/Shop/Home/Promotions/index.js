@@ -30,11 +30,11 @@ const Promotions = (props) => {
   }
 
   return (
-    <ScrollView horizontal style={styles.promotion}>
+    <ScrollView  style={styles.promotion}>
       <View style={styles.headerPromotionRow}>
         <View style={styles.promotionCol}>
           <Text style={styles.headerTitle}>{__('Promotion and \n Coupons')}</Text>
-          <Text style={styles.headerDesc}>{__('Sed ut perspiciatis unde n omnis iste natus error')}</Text>
+          
         </View>
         <Button
           onPress={() => {

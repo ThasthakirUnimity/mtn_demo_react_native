@@ -31,15 +31,13 @@ const Coupon = (props) => {
 
   return (
     <>
-      <ScrollView horizontal style={styles.promotion}>
+      <ScrollView  style={styles.promotion}>
         <View style={styles.headerPromotionRow}>
           <View>
             <View style={[styles.headerRow2, { marginBottom: 10 }]}>
               <Text style={styles.headerTitle}>{__('Promotion \nand Coupons')}</Text>
             </View>
-            <View style={styles.headerRow2}>
-              <Text style={styles.headerDesc}>{__('Sed ut perspiciatis unde \n omnis iste natus error...')}</Text>
-            </View>
+            
           </View>
           <Button
             style={{ marginBottom: 30 }}

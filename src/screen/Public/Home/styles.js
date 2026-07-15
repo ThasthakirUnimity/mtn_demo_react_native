@@ -610,7 +610,8 @@ export default {
   headerPromotionRow: {
     paddingHorizontal: 20,
     marginTop: 20,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    flexDirection: 'row'
   },
   promotionText: {
     marginTop: 20,

@@ -363,7 +363,9 @@ export default {
   headerPromotionRow: {
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    marginTop: 20
+    // marginTop: 20,
+    flexDirection: 'row',
+    
   },
   promotionCol: {
     width: 150

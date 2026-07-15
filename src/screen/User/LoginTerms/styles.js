@@ -73,7 +73,7 @@ export default {
   },
   pageAcceptedBtn: {
     flexDirection: 'row',
-    backgroundColor: COLOR.BLUE,
+    backgroundColor: COLOR.PRIMARY,
     borderRadius: 30,
     paddingHorizontal: 20,
     paddingVertical: 15,

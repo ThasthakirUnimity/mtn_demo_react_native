@@ -22,8 +22,8 @@ export default {
     alignItems: 'center'
   },
   verifyLogoImg: {
-    width: '100%',
-    height: 150,
+    width: 200,
+    height: 100,
     // marginVertical: 35
   },
   verifyRow: {

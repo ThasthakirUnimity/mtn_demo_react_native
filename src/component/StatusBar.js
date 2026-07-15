@@ -9,7 +9,7 @@ const C = function (props) {
   const isFocused = useIsFocused()
   if (isFocused) {
     const insets = useSafeAreaInsets()
-    const style = { height: insets.top }
+    const style = { height: insets.top+15 }
     if (props.backgroundColor) {
       style.backgroundColor = props.backgroundColor
     }

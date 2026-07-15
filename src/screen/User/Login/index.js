@@ -1,5 +1,6 @@
 import React, { Component, createRef } from "react";
 import { Text, View, ImageBackground, ScrollView } from "react-native";
+import { connect } from "react-redux";
 import DeviceInfo from "react-native-device-info";
 import { Formik } from "formik";
 
@@ -389,7 +390,7 @@ class Login extends Component {
               <View style={styles.loginTop}>
                 <View style={styles.loginLogo}>
                   <Image
-                    source={require("@asset/images/logo-vodafone.png")}
+                    source={this.props.appLogo ? { uri: this.props.appLogo } : require("@asset/images/logo-vodafone.png")}
                     style={styles.loginLogoImg}
                     resizeMode="contain"
                   />
@@ -467,4 +468,8 @@ class Login extends Component {
   }
 }
 
-export default Login;
+const mapStateToProps = (state) => ({
+  appLogo: state.brand?.designTokens?.APP_DETAILS?.APP_LOGO || null
+})
+
+export default connect(mapStateToProps)(Login);

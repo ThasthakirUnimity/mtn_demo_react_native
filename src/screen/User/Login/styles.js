@@ -22,8 +22,8 @@ export default {
     alignItems: 'center'
   },
   loginLogoImg: {
-    width: '100%',
-    height: 150,
+    width: 150,
+    height: 60,
     // marginVertical: 35
   },
   loginRow: {

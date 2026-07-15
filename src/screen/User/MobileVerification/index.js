@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, ImageBackground, ScrollView } from 'react-native'
+import { connect } from 'react-redux'
 import DeviceInfo from 'react-native-device-info'
 
 import { Container, Content, Image } from '@src/component/Basic'
@@ -384,7 +385,11 @@ class MobileVerification extends Component {
             <ImageBackground source={require('@asset/images/bg.png')} style={styles.verifyBg}>
               <View style={styles.verifyTop}>
                 <View style={styles.verifyLogo}>
-                  <Image source={require('@asset/images/logo-vodafone.png')} style={styles.verifyLogoImg} resizeMode='contain' />
+                  <Image
+                    source={this.props.appLogo ? { uri: this.props.appLogo } : require('@asset/images/logo-vodafone.png')}
+                    style={styles.verifyLogoImg}
+                    resizeMode='contain'
+                  />
                 </View>
                 <View style={styles.verifyTopRow}>
                   <Text style={styles.verifyTitle}>{__('OTP Verification')}</Text>
@@ -416,4 +421,8 @@ class MobileVerification extends Component {
   }
 }
 
-export default MobileVerification
+const mapStateToProps = (state) => ({
+  appLogo: state.brand?.designTokens?.APP_DETAILS?.APP_LOGO || null
+})
+
+export default connect(mapStateToProps)(MobileVerification)
