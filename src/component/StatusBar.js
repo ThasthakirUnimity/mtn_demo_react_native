@@ -23,7 +23,7 @@ const C = function (props) {
 }
 
 export const DarkStatusBar = function (props) {
-  return <C backgroundColor={props.backgroundColor || COLOR.DEFAULT} barStyle='light-content' />
+  return <C backgroundColor={props.backgroundColor || COLOR.PRIMARY} barStyle='light-content' />
 }
 
 export const LightStatusBar = function (props) {

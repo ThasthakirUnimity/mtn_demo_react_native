@@ -1,5 +1,5 @@
 export const COLOR = {
-  // PRIMARY: '#C60E8E',
+  // PRIMARY: '#c38014',
   PRIMARY: 'red',
   // DEFAULT: '#0A3367',
   // DEFAULT: '#111111',

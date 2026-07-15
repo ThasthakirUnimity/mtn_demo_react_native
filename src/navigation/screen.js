@@ -39,6 +39,7 @@ const Navigator = () => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
+          contentStyle: { backgroundColor: '#FFFFFF' },
         }}
         initialRouteName="NavRoot"
         screenListeners={listeners}

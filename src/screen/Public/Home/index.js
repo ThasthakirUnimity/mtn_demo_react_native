@@ -509,6 +509,7 @@ class HomeUI extends React.Component {
         />
         <SupportChat forceShow renderQuickTour={this.renderQuickTour} />
       </Container>
+      
     )
   }
 

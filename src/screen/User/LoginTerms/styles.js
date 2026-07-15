@@ -69,7 +69,7 @@ export default {
   pageBtnText: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_16,
-    color: COLOR.DEFAULT
+    color: COLOR.LIGHT
   },
   pageAcceptedBtn: {
     flexDirection: 'row',
