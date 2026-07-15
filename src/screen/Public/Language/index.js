@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Platform, Text, View, ImageBackground, ScrollView} from 'react-native';
-import RNRestart from 'react-native-restart';
 
 import {Container, Content, Image} from '@src/component/Basic';
 import {Button, Picker} from '@src/component/Form';
@@ -16,10 +15,10 @@ import Support from '@src/component/Support';
 import {fetchLanguages} from '@src/helper/language';
 import {connect} from 'react-redux';
 import {changeLanguage} from '@src/store/reducers/setting';
-import SplashScreen from 'react-native-splash-screen';
 import theme from '@src/theme/styles';
 import {logClickEvent} from '@src/utility/analytics';
-import { CURRENCY, APP_DETAILS } from '@src/theme/typography'
+import { CURRENCY, APP_DETAILS } from '@src/theme/typography';
+import { navigate } from '@src/navigation';
 
 
 class Language extends Component {
@@ -75,11 +74,8 @@ class Language extends Component {
     });
     await this.props.changeLanguage(this.state.languageCode);
     await i18ChangeLanguage(this.state.languageCode);
-    setTimeout(async () => {
-      await Support.hideLoading();
-      SplashScreen.show();
-      RNRestart.Restart();
-    }, 1500);
+    await Support.hideLoading();
+    navigate('PublicBrand');
   }
 
   render() {

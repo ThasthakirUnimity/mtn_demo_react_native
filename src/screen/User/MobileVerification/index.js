@@ -11,6 +11,7 @@ import { __ } from '@src/utility/translation'
 import http from '@src/utility/http'
 
 import theme from '@src/theme/styles'
+import { COLOR } from '@src/theme/typography'
 import styles from './styles'
 import Support from '@src/component/Support'
 import { initiateUserSession } from '@src/helper/user'

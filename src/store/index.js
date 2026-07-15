@@ -11,7 +11,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  whitelist: ['session', 'setting']
+  whitelist: ['session', 'setting', 'brand']
 }
 
 const persistedReducer = persistCombineReducers(persistConfig, reducers)

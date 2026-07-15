@@ -12,7 +12,6 @@ import { LightStatusBar } from "@src/component/StatusBar";
 import { __ } from "@src/utility/translation";
 import http from "@src/utility/http";
 
-import { CURRENCY } from "@src/theme/typography";
 
 import styles from "./styles";
 import theme from "@src/theme/styles";

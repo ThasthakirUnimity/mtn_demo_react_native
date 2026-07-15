@@ -20,6 +20,8 @@ import { subscribeNetInfo } from '@src/utility/network'
 import { runAfterInteractions } from '@src/utility/component'
 import { changeLanguage } from '@src/utility/translation'
 import { initiate as initiateSupportChat } from '@src/utility/supportChat'
+import { applyDesignTokens, resetDesignTokens } from '@src/theme/applyTheme'
+import { clearPendingLogin } from '@src/store/reducers/brand'
 
 export default class App extends React.Component {
   constructor (props) {
@@ -85,10 +87,25 @@ export default class App extends React.Component {
 
     const state = store.getState()
 
+    // Apply any persisted brand tokens BEFORE the Navigator mounts so that
+    // every StyleSheet.create() in every screen uses the correct brand colors.
+    applyDesignTokens(state.brand?.designTokens)
+
     if (state.setting.languageCode) {
       await changeLanguage(state.setting.languageCode)
     } else {
       routeData.routeName = 'PublicLanguage'
+    }
+
+    // If brand was just selected (post-restart), go to Login and clear the flag.
+    // Otherwise always show Brand selection screen on launch.
+    if (!routeData.routeName && !state.session.isLoggedIn) {
+      if (state.brand?.pendingLogin) {
+        store.dispatch(clearPendingLogin())
+        routeData.routeName = 'UserLogin'
+      } else {
+        routeData.routeName = 'PublicBrand'
+      }
     }
 
     if (!(routeData && routeData.routeName)) {

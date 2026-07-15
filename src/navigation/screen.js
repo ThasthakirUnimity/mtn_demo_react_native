@@ -61,6 +61,11 @@ const Navigator = () => {
         />
         <Stack.Screen
           options={screenOptions}
+          name="PublicBrand"
+          component={require("@src/screen/Public/Brand").default}
+        />
+        <Stack.Screen
+          options={screenOptions}
           name="PublicHelpCentre"
           component={require("@src/screen/Public/HelpCentre").default}
         />

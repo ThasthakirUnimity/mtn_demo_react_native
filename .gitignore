@@ -24,13 +24,16 @@ DerivedData
 
 # Android/IntelliJ
 #
-build/
-.idea
-.gradle
-local.properties
+.idea/
 *.iml
 *.hprof
-.cxx/
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/local.properties
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.map
 *.keystore
 !debug.keystore
 
@@ -78,3 +81,47 @@ buck-out/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Android build outputs & signing
+android/key.json
+android/keystore/
+android/app/*.keystore
+android/app/*.jks
+android/app/release/*.apk
+android/app/release/*.aab
+*.apk
+*.aab
+
+# iOS build outputs
+ios/build/
+ios/DerivedData/
+ios/*.xcarchive
+
+# iOS signing
+ios/*.p8
+ios/*.p12
+ios/*.mobileprovision
+ios/exportOptions.plist
+
+# Firebase config (contains sensitive project credentials)
+android/app/google-services.json
+ios/GoogleService-Info.plist
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Metro bundler cache
+.metro-cache/
+__pycache__/
+
+# Flipper
+ios/Pods/Headers/
+
+# React Native generated
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.map
+
+# Gradle wrapper jar (can be regenerated)
+android/gradle/wrapper/gradle-wrapper.jar
