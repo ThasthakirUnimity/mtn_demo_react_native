@@ -68,11 +68,11 @@ export const THROTTLE_EVENT_DURATION = 1000;
 
 /* GAMIFICATION */
 
-export const GAMIFICATION_PRODUCT_ID = "6270c4e6a2d8693fee8db251";
+export const GAMIFICATION_PRODUCT_ID = "654e153054d0e71480e98455";
 
 /* GAME API */
 
-export const GAME_API_URL = "https://gamification.comviva.com/v1";
+export const GAME_API_URL = "https://gamification.comviva.com/v3";
 
 export const FLUTTERWAVE_PUBLIC_KEY =
   "FLWPUBK_TEST-0f681d304c840c40c28212984b0ed9c5-X";

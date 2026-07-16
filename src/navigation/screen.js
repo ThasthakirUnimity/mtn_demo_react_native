@@ -238,7 +238,7 @@ const Navigator = () => {
         <Stack.Screen
           options={screenOptions}
           name="UserLogin"
-          component={require("@src/screen/User/Login").default}
+          component={require("@src/screen/User/Login/LoginNew").default}
         />
         <Stack.Screen
           options={screenOptions}
@@ -248,7 +248,7 @@ const Navigator = () => {
         <Stack.Screen
           options={screenOptions}
           name="UserMobileVerification"
-          component={require("@src/screen/User/MobileVerification").default}
+          component={require("@src/screen/User/MobileVerification/MobileVerificationNew").default}
         />
         <Stack.Screen
           options={screenOptions}
