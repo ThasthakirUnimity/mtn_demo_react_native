@@ -62,7 +62,7 @@ export default {
   footerBtnText: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_14,
-    color: COLOR.DARK,
+    color: COLOR.LIGHT,
     textAlign: 'center'
   },
 

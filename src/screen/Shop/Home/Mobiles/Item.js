@@ -21,7 +21,7 @@ const Item = ({ item }) => {
         <Image source={{ uri: item.field_product_image_small }} resizeMode='contain' style={styles.newImg} />
       </Button>
       <Text style={styles.newText}>{item.title}</Text>
-      <Text style={styles.priceText}>{item.field_product_price_currency_code} {item.field_product_price}</Text>
+      <Text style={styles.priceText}>{item.field_currency} {item.field_product_price}</Text>
     </View>
   )
 }

@@ -66,6 +66,7 @@ export default {
     backgroundColor: COLOR.LIGHT,
     marginHorizontal: 15,
     marginVertical: 20,
+    padding:10,
     borderRadius: 13,
     shadowColor: COLOR.GREY_LIGHT,
     shadowOffset: {

@@ -12,7 +12,7 @@ import Notification from './Notification'
 const Layout = ({ shareType, session, borrowNumber, plans, selectedPlan, onChangeBorrowNumber, selectBorrowNumber, selectPlan, openContacts }) => {
   return (
     <>
-      <Notification />
+      {/* <Notification /> */}
 
       <View style={styles.search}>
         <View style={styles.searchHeader}>

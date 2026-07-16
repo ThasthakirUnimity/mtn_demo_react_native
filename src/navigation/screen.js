@@ -372,6 +372,12 @@ const Navigator = () => {
 
         <Stack.Screen
           options={screenOptions}
+          name="UserNotification"
+          component={require("@src/screen/User/Borrow/Layout/Notification").default}
+        />
+
+        <Stack.Screen
+          options={screenOptions}
           name="UserCallertuneList"
           component={require("@src/screen/User/CallertuneList").default}
         />

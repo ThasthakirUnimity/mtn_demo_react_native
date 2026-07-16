@@ -1223,7 +1223,7 @@ class Chat extends React.Component {
         total: this.state.starterpacks[0].price,
         items: []
       },
-      chatState: this.state
+      // chatState: this.state
     });
    
   }

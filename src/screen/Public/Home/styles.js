@@ -842,7 +842,7 @@ export default {
     backgroundColor: COLOR.PRIMARY,
     fontFamily: FAMILY.MTN_REGULAR,
     fontSize: SIZE.SIZE_8,
-    color: COLOR.DARK,
+    color: COLOR.LIGHT,
     borderTopRightRadius: 5,
     paddingHorizontal: 10,
     paddingVertical: 5

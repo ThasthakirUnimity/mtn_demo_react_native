@@ -1,55 +1,97 @@
 import React, { useEffect, useState } from 'react'
-import { View } from 'react-native'
+import { View, ScrollView } from 'react-native'
 
-import { Icon, Text } from '@src/component/Basic'
+import { Icon, Text, Container, Content } from '@src/component/Basic'
 import { Button } from '@src/component/Form'
+import Header from '@src/component/Header'
+import { DarkStatusBar } from '@src/component/StatusBar'
 import { __ } from '@src/utility/translation'
+import theme from '@src/theme/styles'
 import styles from './../styles'
-import { fetchHelpContent } from '@src/helper/core'
-import { helpContentIds } from '@src/config/core'
+import { httpCms } from '@src/utility/http'
+import { URLS } from '@src/config/url'
 
 const Notification = () => {
-  const [note, setNote] = useState(null)
-  const [visible, setVisible] = useState(true)
-  const [showMore, setMore] = useState(false)
+  const [notifications, setNotifications] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [expandedIndex, setExpandedIndex] = useState(null)
 
   useEffect(() => {
     initiate()
   }, [])
 
   const initiate = async () => {
-    const data = await fetchHelpContent(helpContentIds.BORROW_PAYLATER)
-    if (data?.id) {
-      setNote({ ...data })
+    try {
+      const result = (await httpCms.get(URLS.HELP_CONTENT)).data
+      if (Array.isArray(result.rows) && result.rows.length) {
+        setNotifications(result.rows)
+      }
+    } catch (e) {
+      console.error('Error fetching notifications:', e)
+    } finally {
+      setLoading(false)
     }
   }
 
-  const toggleMore = () => setMore(!showMore)
-
-  const close = () => {
-    setVisible(false)
+  const toggleExpanded = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index)
   }
 
-  if (!visible || !note) {
-    return null
+  if (loading) {
+    return (
+      <Container>
+        <DarkStatusBar />
+        <Header default leftType='back' title={__('Notifications')} titleColor='light' />
+        <Content style={theme.layout}>
+          <View style={{ padding: 20 }}>
+            <Text>{__('Loading...')}</Text>
+          </View>
+        </Content>
+      </Container>
+    )
   }
 
   return (
-    <View style={styles.alert}>
-      <View style={styles.alertHeader}>
-        <Text style={styles.alertHeaderTitle}>{note.title}</Text>
-        <Button style={styles.alertBtn} onPress={close}>
-          <Icon name='close' type='AntDesign' style={styles.alertBtnIcon} />
-        </Button>
-      </View>
-      <View style={styles.alertRow}>
-        <Text style={styles.alertDesc}>{showMore ? note.content : note.summary}</Text>
-      </View>
-      <Button style={styles.alertRow} onPress={toggleMore}>
-        <Text style={styles.alertMore}>{__(showMore ? 'Show Less' : 'Know More')}</Text>
-        {/* }<Icon name='keyboard-arrow-right' type='MaterialIcons' style={styles.alertMoreIcon} />{ */}
-      </Button>
-    </View>
+    <Container>
+      <DarkStatusBar />
+      <Header default leftType='back' title={__('Notifications')} titleColor='light' />
+      <Content style={theme.layout}>
+        <ScrollView>
+          {notifications.length > 0 ? (
+            <View style={{ padding: 15 }}>
+              {notifications.map((notification, index) => (
+                <View key={notification.id} style={styles.alert}>
+                  <View style={styles.alertHeader}>
+                    <Text style={styles.alertHeaderTitle}>{notification.title || __('Notification')}</Text>
+                  </View>
+                  <View style={styles.alertRow}>
+                    <Text style={styles.alertDesc}>
+                      {expandedIndex === index ? notification.content : notification.summary}
+                    </Text>
+                  </View>
+                  {notification.content && notification.content !== notification.summary && (
+                    <Button style={styles.alertRow} onPress={() => toggleExpanded(index)}>
+                      <Text style={styles.alertMore}>
+                        {__(expandedIndex === index ? 'Show Less' : 'Know More')}
+                      </Text>
+                      <Icon 
+                        name={expandedIndex === index ? 'keyboard-arrow-up' : 'keyboard-arrow-right'} 
+                        type='MaterialIcons' 
+                        style={styles.alertMoreIcon} 
+                      />
+                    </Button>
+                  )}
+                </View>
+              ))}
+            </View>
+          ) : (
+            <View style={{ padding: 20 }}>
+              <Text style={{ textAlign: 'center' }}>{__('No notifications available')}</Text>
+            </View>
+          )}
+        </ScrollView>
+      </Content>
+    </Container>
   )
 }
 

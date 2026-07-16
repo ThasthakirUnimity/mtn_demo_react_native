@@ -7,7 +7,7 @@ import { URLS } from '@src/config/url'
 import { notifySessionExpired } from '@src/helper/user'
 import { store } from '@src/store'
 
-const _str = (data, max = 300) => {
+const _str = (data, max = Infinity) => {
   if (data == null) return '-'
   const s = typeof data === 'string' ? data : JSON.stringify(data)
   return s.length > max ? s.slice(0, max) + '…' : s

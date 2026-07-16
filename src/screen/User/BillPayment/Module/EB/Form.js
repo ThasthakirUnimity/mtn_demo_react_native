@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text, View } from 'react-native'
-
+import { CURRENCY, APP_DETAILS } from '@src/theme/typography'
 import styles from '../../styles'
 import { Button, TextInput } from '@src/component/Form'
 import { __ } from '@src/utility/translation'
@@ -24,7 +24,7 @@ const Form = ({ seleted, submitPayment }) => {
         meternumber: seleted.meternumber,
         name: seleted.name,
         quantity: 1,
-        currency: 'N',
+        currency: CURRENCY.SYMBOL,
         price
       }
       submitPayment('eb', payload, price)

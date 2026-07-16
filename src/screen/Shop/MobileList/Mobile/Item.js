@@ -27,7 +27,7 @@ export default class extends React.Component {
             <Text style={styles.mobileText}>{item.title}</Text>
           </View>
           <View>
-            <Text style={styles.priceText}>{item.field_product_price_currency_code} {item.field_product_revised_price}</Text>
+            <Text style={styles.priceText}>{item.field_currency} {item.field_product_revised_price}</Text>
           </View>
         </View>
         {/* <Text text='regular' size='text12' color='grey' style={styles.offerText}>{item.offer}</Text> */}

@@ -7,7 +7,7 @@ import { cloneDeep } from 'lodash'
 import { Container, Content, Icon, Text } from '@src/component/Basic'
 import { Button } from '@src/component/Form'
 import SectionProvider from '@src/component/Section/Provider'
-import { SecondaryStatusBar } from '@src/component/StatusBar'
+import { DarkStatusBar, SecondaryStatusBar } from '@src/component/StatusBar'
 import Support from '@src/component/Support'
 import { sortings } from '@src/config/filters/transaction'
 import { URLS } from '@src/config/url'
@@ -372,7 +372,7 @@ class TransactionListUI extends React.Component {
   render () {
     return (
       <Container>
-        <SecondaryStatusBar />
+        <DarkStatusBar />
         <Header default leftType='back' title='Transaction History' titleColor='light' />
         {/* <View style={styles.header}>
           <View style={styles.headerLeft}>

@@ -80,9 +80,9 @@ class Payment extends React.Component {
     const profile = props.route.params?.profile || {}
     const cart = props.route.params.cart
     var chatSettings = null
-    if( props.route.params?.chatState ){
-      chatSettings = props.route.params.chatState
-    }
+    // if( props.route.params?.chatState ){
+    //   chatSettings = props.route.params.chatState
+    // }
 
     const flutterwaveOptions = {
       tx_ref: cart.productType + '-' + moment().format('x'),
@@ -547,11 +547,8 @@ class Payment extends React.Component {
           
                 <View style={styles.confirmFooter}>
                   <Button style={styles.confirmBtn} onPress={() => {
-                    console.log("Payment screen | State --> " + this.state.chatState.currentStep )
-                        navigate("UserLoginProfile", {
-                            chatSettings: this.state.chatState
-                          });
-                    }}>
+                    navigate('UserAddNumber')
+                  }}>
                   <Text style={styles.confirmBtnText}>{__('Continue choosing mobile number')}</Text>
                 </Button>
               </View>

@@ -43,7 +43,7 @@ export default {
   tagActive: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_12,
-    color: COLOR.DEFAULT,
+    color: COLOR.LIGHT,
     marginLeft: 10
   },
   tag: {

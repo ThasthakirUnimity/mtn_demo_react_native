@@ -393,7 +393,7 @@ class HomeUI extends React.Component {
 
   renderNotificationButton () {
     const btn = (
-      <Button style={styles.navRightBtn}>
+      <Button style={styles.navRightBtn} onPress={() => navigate('UserNotification')}>
         <Icon name='bell' type='Fontisto' style={styles.navBtnIcon} />
       </Button>
     )

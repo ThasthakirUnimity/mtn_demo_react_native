@@ -765,6 +765,6 @@ export default {
   helpMoreText: {
     fontFamily: FAMILY.MTN_BOLD,
     fontSize: SIZE.SIZE_12,
-    color: COLOR.DEFAULT
+    color: COLOR.LIGHT
   }
 }

@@ -2,6 +2,7 @@ import { useNavigationState } from '@react-navigation/native'
 import React, { memo, useEffect, useState } from 'react'
 import { Platform, Image, View } from 'react-native'
 // import { ZohoSalesIQ } from 'react-native-zohosalesiq-mobilisten'
+import { navigate, navigateCurrent, navigateReset } from "@src/navigation";
 
 import { Button } from '@src/component/Form'
 import { ZOHO_ANDROID_ACCESS_KEY, ZOHO_ANDROID_APP_KEY, ZOHO_IOS_ACCESS_KEY, ZOHO_IOS_APP_KEY } from '@src/config/env'
@@ -19,7 +20,8 @@ const { appKey, accessKey } = Platform.select({
 
 const availabeScreens = []
 
-const isAvailabe = (routeName) => availabeScreens.includes(routeName)
+const isAvailabe = (routeName) => availabeScreens.includes(routeName);
+
 
 export const initiate = () => {
   // ZohoSalesIQ.init(appKey, accessKey)
@@ -40,6 +42,7 @@ export const onScreenChange = (routeName) => {
 }
 
 export const openChatBot = () => {
+  navigate('UserLoginProfile', { forceShowChat: true })
   // ZohoSalesIQ.setLanguage('en')
   // ZohoSalesIQ.showOperatorImageInChat(true)
   // ZohoSalesIQ.showOfflineMessage(true)

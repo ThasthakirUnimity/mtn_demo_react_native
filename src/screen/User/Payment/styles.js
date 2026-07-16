@@ -528,7 +528,7 @@ export default {
   confirmBtnText: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_14,
-    color: COLOR.DARK
+    color: COLOR.LIGHT
   }
 
 }

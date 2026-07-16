@@ -56,7 +56,7 @@ export default {
   pinBtnText: {
     fontFamily: FAMILY.MTN_REGULAR,
     fontSize: SIZE.SIZE_32,
-    color: COLOR.DARK_2
+    color: COLOR.DARK
   },
 
   loginRow: {

@@ -420,7 +420,10 @@ class Menu extends React.Component {
                 </View>
                 <Text style={styles.menuItemText}>{__('Invites')}</Text>
               </Button>
-              <Button style={styles.menuItem} onPress={() => {}}>
+              <Button style={styles.menuItem} onPress={() => {
+                  logClickEvent('MenuNotification')
+                  navigate('UserNotification')
+                }}>
                 <View style={styles.menuCol}>
                   <Image
                     source={require('@asset/icons/menu/notification.png')}
@@ -446,7 +449,7 @@ class Menu extends React.Component {
                 </View>
                 <Text style={styles.menuItemText}>{__('Choose Language')}</Text>
               </Button>
-              <Button style={styles.menuItem} onPress={()=>openChatBot}>
+              <Button style={styles.menuItem} onPress={() => navigate('UserLoginProfile', { forceShowChat: true })}>
                 <View style={styles.menuCol}>
                   <Image
                     source={require('@asset/icons/menu/chat-us.png')}

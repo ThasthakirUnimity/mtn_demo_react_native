@@ -25,7 +25,8 @@ export default {
   },
   pinIcon: {
     fontSize: SIZE.SIZE_18,
-    marginHorizontal: 5
+    marginHorizontal: 5,
+    color: COLOR.GREY
   },
 
   pinContent: {
@@ -56,7 +57,7 @@ export default {
   pinBtnText: {
     fontFamily: FAMILY.MTN_REGULAR,
     fontSize: SIZE.SIZE_32,
-    color: COLOR.DARK_2
+    color: COLOR.DARK
   },
 
   loginRow: {

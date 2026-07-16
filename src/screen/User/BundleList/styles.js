@@ -76,15 +76,17 @@ export default {
   /* tab */
   bundle: {
     paddingTop: 30,
-    paddingLeft: 20,
+    // paddingLeft: 20,
     paddingBottom: 20
+    
   },
   bundleProf: {
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingBottom: 15
+    paddingBottom: 15,
+    paddingHorizontal: 20,
   },
   bundleProfItemsActive: {
     flexDirection: 'row',
@@ -102,7 +104,7 @@ export default {
     paddingVertical: 8
   },
   bundleIcon: {
-    color: COLOR.GREY,
+    color: COLOR.LIGHT,
     fontSize: SIZE.SIZE_22,
     marginRight: 5
   },
@@ -114,7 +116,7 @@ export default {
   bundleProfTagActive: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_12,
-    color: COLOR.DEFAULT
+    color: COLOR.LIGHT
   },
   bundleProfTag: {
     fontFamily: FAMILY.MTN_MEDIUM,
