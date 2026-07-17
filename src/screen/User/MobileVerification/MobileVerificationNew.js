@@ -239,7 +239,7 @@ class MobileVerificationNew extends Component {
   }
 
   render() {
-    const gradientColors = this.props.gradientColors || ["#0D0B2E", "#1A0E5C", "#2C1670"];
+    const gradientColors = Array.isArray(this.props.gradientColors) && this.props.gradientColors.length ? this.props.gradientColors : ["#0D0B2E", "#1A0E5C", "#2C1670"];
     const primaryColor = this.props.primaryColor || "#6B35D9";
 
     return (
@@ -411,7 +411,7 @@ const mapStateToProps = (state) => {
   console.log("APP_DETAILS:", designTokens);
   return {
     appLogo: designTokens?.APP_DETAILS?.APP_LOGO || null,
-    gradientColors: designTokens?.GRADIENT_COLOURS || null,
+    gradientColors: Array.isArray(designTokens?.GRADIENT_COLOURS) ? designTokens.GRADIENT_COLOURS : null,
     primaryColor: designTokens?.COLORS?.PRIMARY || null,
   };
 };

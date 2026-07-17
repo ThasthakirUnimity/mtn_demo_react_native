@@ -21,7 +21,7 @@ const Movies = (props) => {
       <FlatList
         data={props.list}
         horizontal
-        contentContainerStyle={{ paddingLeft: 8, paddingTop: 15, paddingBottom: 20 }}
+        contentContainerStyle={styles.secListHPad}
         showsHorizontalScrollIndicator={false}
         renderItem={renderItem}
         keyExtractor={item => (item.id)}
@@ -30,11 +30,9 @@ const Movies = (props) => {
   }
 
   return (
-    <View>
-      <View style={styles.moviesHeader}>
-        <View style={styles.homeCol}>
-          <Text style={styles.headerTitle}>{__('Movies or Shows you may like')}</Text>
-        </View>
+    <View style={styles.secCard}>
+      <View style={styles.secCardHeader}>
+        <Text style={styles.secCardTitle}>{__('Movies or Shows you may like')}</Text>
         <Button
           onPress={() => {
             logClickEvent('HomeMoviesViewAll')
@@ -44,9 +42,7 @@ const Movies = (props) => {
           <Text style={styles.headerBtnText}>{__('View All')}</Text>
         </Button>
       </View>
-      <View style={styles.musicBg}>
-        {renderList()}
-      </View>
+      {renderList()}
     </View>
   )
 }

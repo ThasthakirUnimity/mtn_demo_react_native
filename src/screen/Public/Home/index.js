@@ -8,7 +8,7 @@ import { Container, Content, Icon } from '@src/component/Basic'
 import { Button } from '@src/component/Form'
 import BottomTabBar from '@src/component/navigation/BottomTabBar'
 import SectionProvider from '@src/component/Section/Provider'
-import { LightStatusBar } from '@src/component/StatusBar'
+import { DarkStatusBar, LightStatusBar } from '@src/component/StatusBar'
 import { URLS } from '@src/config/url'
 import { navigate } from '@src/navigation'
 import theme from '@src/theme/styles'
@@ -16,8 +16,11 @@ import { applyComponentFeatures } from '@src/utility/core'
 import http, { httpCms, httpMovie, httpNews } from '@src/utility/http'
 import request from '@src/utility/request'
 import { SupportChat } from '@src/utility/supportChat'
+import{COLOR} from '@src/theme/typography'
 
 import styles from './styles'
+import HomeHeader from './HomeHeader'
+import BalanceCard from './BalanceCard'
 import Shortcut from './Shortcut'
 import PlayWin from './PlayWin'
 import Offers from './Offers'
@@ -366,7 +369,7 @@ class HomeUI extends React.Component {
 
   renderPlans () {
     return (
-      <Balance
+      <BalanceCard
         planDetails={this.state.planDetails}
         renderQuickTour={this.renderQuickTour}
       />
@@ -407,59 +410,45 @@ class HomeUI extends React.Component {
   renderHeader () {
     let userName = 'Guest'
     let phone = ''
+    let planType = 'Prepaid'
     if (this.props.session.numbers[this.props.session.numberIndex]) {
       const selectedNumber =
         this.props.session.numbers[this.props.session.numberIndex]
       userName = selectedNumber.name
       phone = selectedNumber.number
     }
+    if (this.state.planDetails.length > 0) {
+      planType = this.state.planDetails[0].type || 'Prepaid'
+    }
     return (
-      <View style={styles.navBar}>
-        <View style={styles.navLeft}>
-          <Button
-            style={styles.navBtn}
-            onPress={() => {
-              logClickEvent('HomeSwitchNumber')
-              SectionProvider.showUserNumberSelection()
-            }}
-          >
-            <View>
-              <View style={styles.navRow}>
-                <Text style={styles.navName}>{userName}</Text>
-              </View>
-              <View style={styles.navRow}>
-                <Text style={styles.navNumber}>{phone}</Text>
-              </View>
-            </View>
-            <View style={styles.pickerSelect}>
-              <Icon
-                name='caretdown'
-                type='AntDesign'
-                style={styles.pickerSelectIcon}
-              />
-            </View>
-          </Button>
-        </View>
-        <View style={styles.navRight}>
-          {this.renderSearchButton()}
-          {this.renderNotificationButton()}
-        </View>
-      </View>
+      <HomeHeader
+        userName={userName}
+        phone={phone}
+        planType={planType}
+        onSearch={() => {
+          logClickEvent('HomeSearch')
+          navigate('PublicSearch')
+        }}
+        onNotification={() => navigate('UserNotification')}
+        onNumberSelect={() => {
+          logClickEvent('HomeSwitchNumber')
+          SectionProvider.showUserNumberSelection()
+        }}
+        renderQuickTour={this.renderQuickTour}
+      />
     )
   }
 
   renderHomePage () {
     return (
       <Container>
-        <LightStatusBar />
-        {this.renderHeader()}
-
-        <Content style={theme.layout}>
+        <LightStatusBar backgroundColor={COLOR.PRIMARY_LIGHT} />
+        <Content style={styles.homeBg}>
           <ScrollView keyboardShouldPersistTaps='always' nestedScrollEnabled>
-            <View style={styles.bgImg} />
-            <View style={styles.mainContainer}>{this.renderPlans()}</View>
+            {this.renderHeader()}
+            {this.renderPlans()}
 
-            <View style={styles.mainContent}>
+            <View style={styles.newMainContent}>
               <BannerAd placement='home' />
               <Shortcut session={this.props.session} />
               <Offers

@@ -34,18 +34,18 @@ const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const CAROUSEL_ITEMS = [
   {
     id: "1",
-    image: require("@asset/images/carousel_1.png"),
-    title: "RECHARGE &\nPAY BILLS",
+    IMAGE: require("@asset/images/carousel_1.png"),
+    TITLE: "RECHARGE &\nPAY BILLS",
   },
   {
     id: "2",
-    image: require("@asset/images/carousel_2.png"),
-    title: "FAST & SECURE\nPAYMENTS",
+    IMAGE: require("@asset/images/carousel_2.png"),
+    TITLE: "FAST & SECURE\nPAYMENTS",
   },
   {
     id: "3",
-    image: require("@asset/images/carousel_3.png"),
-    title: "EARN CASHBACK\nREWARDS",
+    IMAGE: require("@asset/images/carousel_3.png"),
+    TITLE: "EARN CASHBACK\nREWARDS",
   },
 ];
 
@@ -251,19 +251,20 @@ class LoginNew extends Component {
   }
 
   renderCarouselItem({ item }) {
+    const imageSource = typeof item.IMAGE === 'string' ? { uri: item.IMAGE } : item.IMAGE;
     return (
       <View style={styles.slide}>
         {/* Image: right-aligned, top */}
         <View style={styles.slideImageWrap}>
           <Image
-            source={item.image}
+            source={imageSource}
             resizeMode="contain"
             style={styles.slideImage}
           />
         </View>
         {/* Text: below image, left-aligned from centre */}
         <View style={styles.slideTextWrap}>
-          <Text style={styles.slideTitle}>{item.title}</Text>
+          <Text style={styles.slideTitle}>{item.TITLE}</Text>
         </View>
       </View>
     );
@@ -403,7 +404,7 @@ class LoginNew extends Component {
 
   render() {
     const carouselItems = this.props.loginCarousel || CAROUSEL_ITEMS;
-    const gradientColors = this.props.gradientColors || ["#0D0B2E", "#1A0E5C", "#2C1670"];
+    const gradientColors = Array.isArray(this.props.gradientColors) && this.props.gradientColors.length ? this.props.gradientColors : ["#0D0B2E", "#1A0E5C", "#2C1670"];
     
     return (
       <LinearGradient
@@ -687,7 +688,7 @@ const mapStateToProps = (state) => {
   return {
     appLogo: designTokens?.APP_DETAILS?.APP_LOGO || null,
     loginCarousel: designTokens?.LOGIN_CAROUSEL || null,
-    gradientColors: designTokens?.GRADIENT_COLOURS || null,
+    gradientColors: Array.isArray(designTokens?.GRADIENT_COLOURS) ? designTokens.GRADIENT_COLOURS : null,
     primaryColor: designTokens?.COLORS?.PRIMARY || null,
   };
 };

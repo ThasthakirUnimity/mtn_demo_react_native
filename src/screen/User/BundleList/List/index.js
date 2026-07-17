@@ -26,11 +26,11 @@ const List = ({ title, fetching, list, addToCart, buyNow, openView }) => {
     return (
       <FlatList
         data={list}
-        contentContainerStyle={styles.rechargeContainer}
+        contentContainerStyle={styles.bundleListContent}
         showsHorizontalScrollIndicator={false}
-        horizontal
         renderItem={renderItem}
         keyExtractor={item => item.id}
+        scrollEnabled={false}
       />
     )
   }
@@ -41,9 +41,9 @@ const List = ({ title, fetching, list, addToCart, buyNow, openView }) => {
 
   return (
     <View>
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>{title}</Text>
-      </View>
+      {!!title && (
+        <Text style={styles.bundleSubCatTitle}>{title}</Text>
+      )}
       {renderList()}
     </View>
   )

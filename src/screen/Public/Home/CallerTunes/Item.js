@@ -10,27 +10,10 @@ import { navigate } from '@src/navigation'
 import { logClickEvent } from '@src/utility/analytics'
 
 const colors = [
-  '#C4E759',
-  '#54E38E',
-  '#D4FC78',
-  '#C1E3FF',
-  '#8DE8FF',
-  '#DEB0DF',
-  '#F8C390',
-  '#A16BFE',
-  '#E16E93',
-  '#ABC7FF',
-
-  '#C4E759',
-  '#54E38E',
-  '#D4FC78',
-  '#C1E3FF',
-  '#8DE8FF',
-  '#DEB0DF',
-  '#F8C390',
-  '#A16BFE',
-  '#E16E93',
-  '#ABC7FF'
+  '#C4E759', '#54E38E', '#D4FC78', '#C1E3FF', '#8DE8FF',
+  '#DEB0DF', '#F8C390', '#A16BFE', '#E16E93', '#ABC7FF',
+  '#C4E759', '#54E38E', '#D4FC78', '#C1E3FF', '#8DE8FF',
+  '#DEB0DF', '#F8C390', '#A16BFE', '#E16E93', '#ABC7FF'
 ]
 
 const Item = ({ item, index }) => {
@@ -40,18 +23,27 @@ const Item = ({ item, index }) => {
     })
     navigate('UserCallertune', { tune: item })
   }
+
   return (
-    <View style={styles.callertuneContent}>
-      <LinearGradient colors={['rgba(255, 255, 255, 0.7)', 'rgba(255, 255, 255, 0.2)']} style={[{ backgroundColor: colors[index] || '#fff' }, styles.linearCallertuneImg]}>
-        <View style={styles.callertuneCol}>
-          <Text style={styles.callertunesText}>{item.contentAlbum}</Text>
-          <Text style={styles.callertunesDesc} numberOfLines={3}>{item.title}</Text>
-        </View>
-        <Button style={styles.callertuneBtn} onPress={onPress}>
-          <View style={styles.callertuneplayBtn}>
-            <Icon name='controller-play' type='Entypo' style={styles.callertuneplayBtnIcon} />
+    <View style={styles.ctContent}>
+      <LinearGradient
+        colors={['rgba(255,255,255,0.75)', 'rgba(255,255,255,0.1)']}
+        style={[styles.ctGradient, { backgroundColor: colors[index] || '#C1E3FF' }]}
+      >
+        {/* Album name */}
+        {!!item.contentAlbum && (
+          <Text style={styles.ctAlbum} numberOfLines={1}>{item.contentAlbum}</Text>
+        )}
+
+        {/* Tune title */}
+        <Text style={styles.ctTuneTitle} numberOfLines={2}>{item.title}</Text>
+
+        {/* Play row */}
+        <Button style={styles.ctPlayRow} onPress={onPress}>
+          <View style={styles.ctPlayBtn}>
+            <Icon name='controller-play' type='Entypo' style={styles.ctPlayBtnIcon} />
           </View>
-          <Text style={styles.callertunesDesc}>1 Min</Text>
+          <Text style={styles.ctDuration}>{__('1 Min')}</Text>
         </Button>
       </LinearGradient>
     </View>

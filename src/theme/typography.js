@@ -1,12 +1,19 @@
 const cmsJson = {
   "COLOR": {
-    "PRIMARY": "#FF0000",
+    "PRIMARY": "#e02828",
+    "SECONDARY": "#B80000",
     "DEFAULT": "#4C4D4F",
+    "PRIMARY_LIGHT": "#f1bec8",
     "BG": "#FFFDFC",
     "NEWS_BG": "#F3F3F3",
     "GOLD": "#EAB900",
     "BLUE": "#7AC2E4",
+    "LIGHT_BLUE": "#C2E9FF",
+    "LIGHT_ORANGE": "#FFDBB2",
 
+    "LIGHT_YELLOW": "#FFE8C2",
+    "LIGHT_GREEN": "#C5F0D4",
+    "BUTTON_BG": "#E02828",
     "BUTTON_TEXT": "#FFFFFF",
     "BLACK": "#000000",
     "DARK": "#4C4D4F",

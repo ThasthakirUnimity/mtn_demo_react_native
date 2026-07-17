@@ -1,9 +1,275 @@
-import { Dimensions } from 'react-native'
+import { Dimensions, Platform } from 'react-native'
 import { COLOR, FAMILY, SIZE } from '@src/theme/typography'
 
 const width = Dimensions.get('window').width
 
 export default {
+  /* ── Screen ── */
+  screenBg: {
+    flex: 1,
+    backgroundColor: COLOR.NEWS_BG
+  },
+
+  /* ── Gradient Header ── */
+  gradientHeader: {
+    paddingTop: Platform.OS === 'ios' ? 52 : 28,
+    paddingBottom: 32,
+    paddingHorizontal: 24
+  },
+  gradHdrTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16
+  },
+  gradBackBtn: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center'
+  },
+  gradBackIcon: {
+    fontSize: SIZE.SIZE_26,
+    color: COLOR.LIGHT
+  },
+  gradHdrCenter: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  gradHdrPhone: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_16,
+    color: COLOR.LIGHT,
+    marginRight: 8
+  },
+  prepaidBadge: {
+    backgroundColor: 'rgba(255,255,255,0.22)',
+    borderRadius: 10,
+    paddingHorizontal: 9,
+    paddingVertical: 3
+  },
+  prepaidBadgeText: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_10,
+    color: COLOR.LIGHT
+  },
+  gradHdrTitle: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_34,
+    color: COLOR.LIGHT,
+    marginTop: 20,
+    marginBottom: 20
+  },
+  gradHdrSearch: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLOR.LIGHT,
+    borderRadius: 26,
+    paddingHorizontal: 20,
+    height: 52
+  },
+  gradSearchInput: {
+    flex: 1,
+    fontFamily: FAMILY.MTN_REGULAR,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.BLACK,
+    paddingVertical: 0
+  },
+  gradSearchIcon: {
+    fontSize: SIZE.SIZE_22,
+    color: COLOR.GREY_LIGHT
+  },
+
+  /* ── Floating Category + Chip Container ── */
+  floatingCatCard: {
+    backgroundColor: COLOR.LIGHT,
+    borderTopLeftRadius: 32,
+    borderTopRightRadius: 32,
+    marginTop: -25,
+    paddingTop: 20,
+    paddingBottom: 10,
+    zIndex: 2
+  },
+  catTabContent: {
+    paddingHorizontal: 16,
+    alignItems: 'center'
+  },
+  catTabItem: {
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingBottom: 12,
+    marginRight: 4
+  },
+  catTabText: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.GREY_LIGHT
+  },
+  catTabTextActive: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.PRIMARY
+  },
+  catTabIndicator: {
+    position: 'absolute',
+    bottom: 0,
+    width: 70,
+    height: 3,
+    borderRadius: 2,
+    backgroundColor: COLOR.PRIMARY
+  },
+  catDivider: {
+    height: 1,
+    backgroundColor: COLOR.SMOKE_DARK,
+    marginHorizontal: 16
+  },
+  chipContent: {
+    paddingHorizontal: 20,
+    paddingVertical: 12
+  },
+  chipActive: {
+    backgroundColor: COLOR.DEFAULT,
+    borderRadius: 20,
+    height: 40,
+    paddingHorizontal: 20,
+    justifyContent: 'center',
+    marginRight: 10
+  },
+  chipInactive: {
+    backgroundColor: COLOR.NEWS_BG,
+    borderRadius: 20,
+    height: 40,
+    paddingHorizontal: 20,
+    justifyContent: 'center',
+    marginRight: 10
+  },
+  chipTextActive: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.LIGHT
+  },
+  chipTextInactive: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.GREY_LIGHT
+  },
+
+  /* ── Content scroll ── */
+  contentScroll: {
+    flex: 1
+  },
+  contentScrollInner: {
+    paddingTop: 8,
+    paddingBottom: 32
+  },
+
+  /* ── Bundle Card (premium redesign) ── */
+  bundleCard: {
+    marginHorizontal: 20,
+    marginBottom: 16,
+    backgroundColor: COLOR.LIGHT,
+    borderRadius: 24,
+    padding: 20,
+    shadowColor: COLOR.BLACK,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.07,
+    shadowRadius: 12,
+    elevation: 6
+  },
+  bundleCardPrice: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_38,
+    color: COLOR.BLACK,
+    lineHeight: 46
+  },
+  bundleCardPlanName: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.DEFAULT,
+    marginTop: 4,
+    marginBottom: 18
+  },
+  bundleCardMetaRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 18
+  },
+  bundleCardMetaCol: {
+    flex: 1
+  },
+  bundleCardMetaLabel: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_10,
+    color: COLOR.GREY_LIGHT,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+    marginBottom: 5
+  },
+  bundleCardMetaValue: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_16,
+    color: COLOR.BLACK
+  },
+  bundleCardDivider: {
+    height: 1,
+    backgroundColor: COLOR.SMOKE_DARK,
+    marginBottom: 16
+  },
+  bundleCardActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
+  bundleCardBtnRow: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  bundleCardViewDetails: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.PRIMARY
+  },
+  bundleCardCartBtn: {
+    borderWidth: 1.5,
+    borderColor: COLOR.PRIMARY,
+    borderRadius: 21,
+    height: 42,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 8
+  },
+  bundleCardCartText: {
+    fontFamily: FAMILY.MTN_MEDIUM,
+    fontSize: SIZE.SIZE_12,
+    color: COLOR.PRIMARY
+  },
+  bundleCardBuyBtn: {
+    backgroundColor: COLOR.PRIMARY,
+    borderRadius: 21,
+    height: 42,
+    paddingHorizontal: 28,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  bundleCardBuyText: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_14,
+    color: COLOR.LIGHT
+  },
+  bundleListContent: {
+    paddingTop: 8,
+    paddingBottom: 8
+  },
+  bundleSubCatTitle: {
+    fontFamily: FAMILY.MTN_BOLD,
+    fontSize: SIZE.SIZE_18,
+    color: COLOR.BLACK,
+    marginHorizontal: 20,
+    marginTop: 20,
+    marginBottom: 4
+  },
+
   nav: {
     flexDirection: 'row',
     alignItems: 'center'
@@ -363,12 +629,12 @@ export default {
   itemText: {
     fontFamily: FAMILY.MTN_REGULAR,
     fontSize: SIZE.SIZE_16,
-    color: COLOR.DARK
+    color: COLOR.LIGHT
   },
   price: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_22,
-    color: COLOR.DARK,
+    color: COLOR.LIGHT,
     marginLeft: 30
   },
   viewcartBtn: {
@@ -382,11 +648,11 @@ export default {
   viewcartBtnText: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_16,
-    color: COLOR.DEFAULT
+    color: COLOR.LIGHT
   },
   viewcartBtnIcon: {
     fontSize: SIZE.SIZE_24,
-    color: COLOR.DEFAULT
+    color: COLOR.LIGHT
   },
   /* -- Accordion -- */
 

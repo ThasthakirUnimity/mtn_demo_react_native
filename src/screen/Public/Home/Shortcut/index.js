@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { FlatList, View } from 'react-native'
+import { FlatList, View,Text } from 'react-native'
+import { COLOR } from '@src/theme/typography'
+import styles from '../styles'
 
 import Item from './Item'
 import { __ } from '@src/utility/translation'
@@ -22,15 +24,19 @@ export default ({ session }) => {
 
   const renderItem = ({ item }) => <Item item={item} session={session} />
   return (
-    <View>
-      <FlatList
-        data={list}
-        numColumns={4}
-        contentContainerStyle={{ paddingLeft: 8 }}
-        showsHorizontalScrollIndicator={false}
-        renderItem={renderItem}
-        keyExtractor={item => (item.id)}
-      />
+    <View style={styles.scCardWrapper}>
+      <View style={styles.scCard}>
+        <Text style={styles.scCardTitle}>{__('Quick Actions')}</Text>
+        <FlatList
+          data={list}
+          numColumns={4}
+          contentContainerStyle={styles.scListContent}
+          scrollEnabled={false}
+          renderItem={renderItem}
+          keyExtractor={item => String(item.id)}
+        />
+      </View>
     </View>
   )
 }
+

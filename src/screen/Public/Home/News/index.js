@@ -37,7 +37,6 @@ const News = (props) => {
           <Text style={styles.headerTitle}>{__('News and Events')}</Text>
         </View>
         <Button
-          style={styles.headerBtn}
           onPress={() => {
             logClickEvent('HomeNewsViewAll')
             navigate('PlayNewsList')

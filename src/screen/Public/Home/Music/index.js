@@ -8,6 +8,7 @@ import { __ } from '@src/utility/translation'
 import styles from '../styles'
 import Item from './Item'
 import Placeholder from './Placeholder'
+import HeroCard from './HeroCard'
 import { logClickEvent } from '@src/utility/analytics'
 
 const Music = (props) => {
@@ -21,7 +22,7 @@ const Music = (props) => {
       <FlatList
         data={props.list}
         horizontal
-        contentContainerStyle={{ paddingLeft: 10 }}
+        contentContainerStyle={styles.muListContent}
         showsHorizontalScrollIndicator={false}
         renderItem={renderItem}
         keyExtractor={item => (item.id)}
@@ -30,22 +31,28 @@ const Music = (props) => {
   }
 
   return (
-    <View>
-      <View style={styles.header}>
-        <View style={styles.homeCol}>
-          <Text style={styles.headerTitle}>{__('Music you may like')}</Text>
+    <View style={styles.muSection}>
+      <View style={styles.muCard}>
+
+        {/* ── Hero player card ── */}
+        {!props.fetching && props.list && props.list.length > 0 && (
+          <HeroCard list={props.list} />
+        )}
+
+        {/* ── Music you may like ── */}
+        <View style={styles.muHeader}>
+          <Text style={styles.muTitle}>{__('Music you may like')}</Text>
+          <Button
+            onPress={() => {
+              logClickEvent('HomeMusicsViewAll')
+              navigate('PlayMusicList', { type: 'music' })
+            }}
+          >
+            <Text style={styles.headerBtnText}>{__('View All')}</Text>
+          </Button>
         </View>
-        <Button
-          onPress={() => {
-            logClickEvent('HomeMusicsViewAll')
-            navigate('PlayMusicList', { type: 'music' })
-          }}
-        >
-          <Text style={styles.headerBtnText}>{__('View All')}</Text>
-        </Button>
-      </View>
-      <View style={styles.musicBg}>
         {renderList()}
+
       </View>
     </View>
   )

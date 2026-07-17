@@ -19,13 +19,18 @@ const Product = (props) => {
       return <Placeholder />
     }
     return (
-      <FlatList
-        data={props.list}
-        numColumns={4}
-        contentContainerStyle={{ paddingHorizontal: 15 }}
-        showsHorizontalScrollIndicator={false}
-        renderItem={renderItem}
-      />
+      <View style={styles.mpCardWrapper}>
+        <View style={styles.mpCard}>
+          <FlatList
+            data={props.list}
+            numColumns={4}
+            contentContainerStyle={styles.mpListContent}
+            scrollEnabled={false}
+            showsHorizontalScrollIndicator={false}
+            renderItem={renderItem}
+          />
+        </View>
+      </View>
     )
   }
   return (

@@ -1,7 +1,8 @@
 import React, { createRef } from 'react'
-import { Image, ScrollView, View } from 'react-native'
+import { FlatList, Image, ScrollView, TextInput, View } from 'react-native'
 import { connect } from 'react-redux'
 import { cloneDeep } from 'lodash'
+import LinearGradient from 'react-native-linear-gradient'
 
 import { Container, Content, Icon, Text } from '@src/component/Basic'
 import { Button } from '@src/component/Form'
@@ -21,9 +22,10 @@ import { asyncForEach } from '@src/utility/core'
 import BuildBundles from './BuildBundles'
 import { BUILD_YOUR_BUNDLE_FLAG } from '@src/config/core'
 import { logClickEvent } from '@src/utility/analytics'
+import { COLOR } from '@src/theme/typography'
 
 class BundleList extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     const profile = this.props.route.params.profile
@@ -40,6 +42,8 @@ class BundleList extends React.Component {
       fetchingBuildBundle: true,
       buildBundles: [],
       buildBundlesSelected: {},
+
+      selectedSubCategory: null,
 
       cart: {
         items: []
@@ -63,11 +67,12 @@ class BundleList extends React.Component {
     this.renderContent = this.renderContent.bind(this)
     this.renderProfile = this.renderProfile.bind(this)
     this.renderFooter = this.renderFooter.bind(this)
+    this.selectSubCategory = this.selectSubCategory.bind(this)
 
     this.refBundleView = createRef()
   }
 
-  async componentDidMount () {
+  async componentDidMount() {
     let isFeed = false
     if (this.state.isRecharge) {
       isFeed = true
@@ -94,7 +99,7 @@ class BundleList extends React.Component {
     }
   }
 
-  async fetchCategories () {
+  async fetchCategories() {
     try {
       const r = (await http.get(URLS.BUNDLE_CATEGORY)).data
       if (r?.responseData?.categories?.length) {
@@ -106,7 +111,8 @@ class BundleList extends React.Component {
             }
             return c
           }).filter(r => (!!r)),
-          selectedCategory: r.responseData.categories[0].id
+          selectedCategory: r.responseData.categories[0].id,
+          selectedSubCategory: r.responseData.categories[0]?.subcategory?.[0]?.id || null
         })
       }
     } catch (e) { }
@@ -115,7 +121,7 @@ class BundleList extends React.Component {
     })
   }
 
-  async fetchCategoryBundles () {
+  async fetchCategoryBundles() {
     const bundles = {}
     const selectedCategory = this.state.categories.find(c => (c.id == this.state.selectedCategory))
     if (selectedCategory) {
@@ -138,7 +144,7 @@ class BundleList extends React.Component {
     })
   }
 
-  async fetchBuildBundles () {
+  async fetchBuildBundles() {
     try {
       await this.promisedSetState({
         fetchingBuildBundle: true
@@ -181,13 +187,13 @@ class BundleList extends React.Component {
           })
         })
       }
-    } catch (e) {}
+    } catch (e) { }
     await this.promisedSetState({
       fetchingBuildBundle: false
     })
   }
 
-  async fetchBundles (id) {
+  async fetchBundles(id) {
     try {
       const params = {
         action: 'VIEW_CATALOGUE',
@@ -221,11 +227,14 @@ class BundleList extends React.Component {
     }
   }
 
-  async selectCategory (selectedCategory) {
+  async selectCategory(selectedCategory) {
     if (this.state.selectedCategory != selectedCategory) {
       const oCat = this.state.categories.find(c => (c.id == this.state.selectedCategory))
       const cCat = this.state.categories.find(c => (c.id == selectedCategory))
-      const state = { selectedCategory }
+      const state = {
+        selectedCategory,
+        selectedSubCategory: cCat?.subcategory?.[0]?.id || null
+      }
       if (oCat?.flag == BUILD_YOUR_BUNDLE_FLAG || cCat.flag == BUILD_YOUR_BUNDLE_FLAG) {
         state.cart = {
           items: [],
@@ -238,7 +247,12 @@ class BundleList extends React.Component {
     }
   }
 
-  async addToCart (bundle) {
+  selectSubCategory(id) {
+    const next = id === this.state.selectedSubCategory ? null : id
+    this.setState({ selectedSubCategory: next })
+  }
+
+  async addToCart(bundle) {
     logClickEvent('BundleListAddToCart', {
       title: bundle.ProductName
     })
@@ -261,7 +275,7 @@ class BundleList extends React.Component {
     }
   }
 
-  async removeFromCart (bundle) {
+  async removeFromCart(bundle) {
     logClickEvent('BundleListRemoveFromCart', {
       title: bundle.ProductName
     })
@@ -279,14 +293,14 @@ class BundleList extends React.Component {
     }
   }
 
-  openView (item) {
+  openView(item) {
     logClickEvent('BundleListView', {
       title: item.ProductName
     })
     this.refBundleView.current.open(item)
   }
 
-  async buyNow (bundle) {
+  async buyNow(bundle) {
     logClickEvent('BundleListBuyNow', {
       title: bundle.ProductName
     })
@@ -317,13 +331,13 @@ class BundleList extends React.Component {
       profile: this.state.isRecharge
         ? this.state.profile
         : {
-            name: this.state.selectedNumber.name,
-            mobilenumber: this.state.selectedNumber.number
-          }
+          name: this.state.selectedNumber.name,
+          mobilenumber: this.state.selectedNumber.number
+        }
     })
   }
 
-  async navigateToCart () {
+  async navigateToCart() {
     logClickEvent('BundleListCart')
 
     const cart = cloneDeep(this.state.cart)
@@ -340,14 +354,14 @@ class BundleList extends React.Component {
       profile: this.state.isRecharge
         ? this.state.profile
         : {
-            name: this.state.selectedNumber.name,
-            mobilenumber: this.state.selectedNumber.number
-          }
+          name: this.state.selectedNumber.name,
+          mobilenumber: this.state.selectedNumber.number
+        }
 
     })
   }
 
-  renderBuildBundles () {
+  renderBuildBundles() {
     return (
       <BuildBundles
         list={this.state.buildBundles}
@@ -358,30 +372,33 @@ class BundleList extends React.Component {
     )
   }
 
-  renderList (category) {
+  renderList(category) {
+    const subcats = this.state.selectedSubCategory
+      ? category.subcategory.filter(sc => sc.id == this.state.selectedSubCategory)
+      : category.subcategory
     return (
       <View>
         {
-         category.subcategory.map(subCategory => {
-           const bundle = this.state.bundles[subCategory.id] || {}
-           return (
-             <List
-               key={subCategory.id}
-               title={subCategory.title}
-               list={bundle?.list || []}
-               fetching={bundle.fetching}
-               addToCart={this.addToCart}
-               buyNow={this.buyNow}
-               openView={this.openView}
-             />
-           )
-         })
-      }
+          subcats.map(subCategory => {
+            const bundle = this.state.bundles[subCategory.id] || {}
+            return (
+              <List
+                key={subCategory.id}
+                title={subCategory.title}
+                list={bundle?.list || []}
+                fetching={bundle.fetching}
+                addToCart={this.addToCart}
+                buyNow={this.buyNow}
+                openView={this.openView}
+              />
+            )
+          })
+        }
       </View>
     )
   }
 
-  renderContent () {
+  renderContent() {
     return this.state.categories.map(category => {
       if (category.id != this.state.selectedCategory) {
         return null
@@ -393,7 +410,7 @@ class BundleList extends React.Component {
     })
   }
 
-  renderProfile () {
+  renderProfile() {
     let img = require('@asset/icons/avatar-dark.png')
     let username = ''
     let mobilenumber = ''
@@ -427,7 +444,7 @@ class BundleList extends React.Component {
     )
   }
 
-  renderFooter () {
+  renderFooter() {
     if (this.state.cart.items.length === 0) {
       return null
     }
@@ -451,81 +468,129 @@ class BundleList extends React.Component {
     )
   }
 
-  render () {
+  render() {
+    const displayNumber = this.state.isRecharge
+      ? (this.state.profile?.mobilenumber || '')
+      : (this.state.selectedNumber?.number || '')
+    const planType = this.state.isRecharge
+      ? 'Prepaid'
+      : (this.state.selectedNumber?.type || 'Prepaid')
+
+    const currentCategory = this.state.categories.find(c => c.id == this.state.selectedCategory)
+    const subCategories = currentCategory?.subcategory || []
+
     return (
       <Container>
         <DarkStatusBar />
-        <Header
-          default
-          leftType='back'
-          title={__(this.state.isRecharge ? 'Recharge' : 'Bundles')}
-          titleColor='light'
-          rightContent={
-            <View style={styles.nav}>
-              <Button style={styles.rightBtn}>
-                <Icon
-                  name='search1'
-                  type='AntDesign'
-                  style={styles.rightIcon}
-                />
+        <View style={styles.screenBg}>
+
+          {/* ── Gradient Header ── */}
+          <LinearGradient
+            colors={[COLOR.PRIMARY, COLOR.SECONDARY]}
+
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+            style={styles.gradientHeader}
+          >
+            {/* Back + number + badge */}
+            <View style={styles.gradHdrTopRow}>
+              <Button style={styles.gradBackBtn} onPress={goBack}>
+                <Icon name='arrow-left' type='MaterialCommunityIcons' style={styles.gradBackIcon} />
               </Button>
-              {/* <Button style={styles.rightBtn}>
-                <Image
-                  source={require('@asset/icons/filters.png')}
-                  style={styles.miageImg}
-                  resizeMode='contain'
-                />
-              </Button> */}
+              <View style={styles.gradHdrCenter}>
+                {!!displayNumber && (
+                  <Text style={styles.gradHdrPhone}>{displayNumber}</Text>
+                )}
+                {!!planType && (
+                  <View style={styles.prepaidBadge}>
+                    <Text style={styles.prepaidBadgeText}>{planType}</Text>
+                  </View>
+                )}
+              </View>
+              <View style={styles.gradBackBtn} />
             </View>
-          }
-        />
-        <Content style={theme.layout}>
-          <ScrollView style={styles.formContainer}>
-            {this.renderProfile()}
-            <ScrollView horizontal style={styles.bundle}>
-              <View style={styles.bundleProf}>
-                {this.state.categories.map(category => {
-                  const selected = category.id == this.state.selectedCategory
-                  const selectCategory = () => {
-                    logClickEvent('BundleListCategoryTab', {
-                      title: category.category
-                    })
-                    this.selectCategory(category.id)
-                  }
+
+            {/* Title */}
+            <Text style={styles.gradHdrTitle}>
+              {this.state.isRecharge ? 'Recharge Plans' : 'Plans for you'}
+            </Text>
+
+            {/* Search bar */}
+            <View style={styles.gradHdrSearch}>
+              <TextInput
+                style={styles.gradSearchInput}
+                placeholder='Search plans'
+                placeholderTextColor={COLOR.GREY_LIGHT}
+              />
+              <Icon name='magnify' type='MaterialCommunityIcons' style={styles.gradSearchIcon} />
+            </View>
+          </LinearGradient>
+
+          {/* ── Floating category + chip container ── */}
+          <View style={styles.floatingCatCard}>
+            {/* Main category tabs — FlatList */}
+            <FlatList
+              data={this.state.categories}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              keyExtractor={item => String(item.id)}
+              contentContainerStyle={styles.catTabContent}
+              renderItem={({ item: category }) => {
+                const selected = category.id == this.state.selectedCategory
+                return (
+                  <Button
+                    style={styles.catTabItem}
+                    onPress={() => {
+                      logClickEvent('BundleListCategoryTab', { title: category.category })
+                      this.selectCategory(category.id)
+                    }}
+                  >
+                    <Text style={selected ? styles.catTabTextActive : styles.catTabText}>
+                      {category.category}
+                    </Text>
+                    {selected && <View style={styles.catTabIndicator} />}
+                  </Button>
+                )
+              }}
+            />
+
+            {/* Divider */}
+            <View style={styles.catDivider} />
+
+            {/* Subcategory chips — separate FlatList */}
+            {subCategories.length > 0 && (
+              <FlatList
+                data={subCategories}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={item => String(item.id)}
+                contentContainerStyle={styles.chipContent}
+                renderItem={({ item: sc }) => {
+                  const active = sc.id === this.state.selectedSubCategory
                   return (
                     <Button
-                      key={category.id}
-                      style={
-                        selected
-                          ? styles.bundleProfItemsActive
-                          : styles.bundleProfItems
-                      }
-                      onPress={selectCategory}
+                      style={active ? styles.chipActive : styles.chipInactive}
+                      onPress={() => this.selectSubCategory(sc.id)}
                     >
-                      <Icon
-                        name='swap-vertical-circle-outline'
-                        type='MaterialCommunityIcons'
-                        style={
-                          selected ? styles.bundleIcon : styles.bundleIconActive
-                        }
-                      />
-                      <Text
-                        style={
-                          selected
-                            ? styles.bundleProfTagActive
-                            : styles.bundleProfTag
-                        }
-                      >
-                        {category.category}
+                      <Text style={active ? styles.chipTextActive : styles.chipTextInactive}>
+                        {sc.title}
                       </Text>
                     </Button>
                   )
-                })}
-              </View>
-            </ScrollView>
+                }}
+              />
+            )}
+          </View>
+
+          {/* ── Bundle Content ── */}
+          <ScrollView
+            style={styles.contentScroll}
+            contentContainerStyle={styles.contentScrollInner}
+          >
             {this.renderContent()}
           </ScrollView>
-        </Content>
+
+        </View>
         {this.renderFooter()}
         <BundleView ref={this.refBundleView} buyNow={this.buyNow} />
       </Container>
