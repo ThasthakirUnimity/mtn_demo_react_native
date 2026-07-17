@@ -6,7 +6,7 @@ import { TourGuideProvider, TourGuideZone } from 'rn-tourguide'
 import BannerAd from '@src/component/Ads/Banner'
 import { Container, Content, Icon } from '@src/component/Basic'
 import { Button } from '@src/component/Form'
-import Footer from '@src/component/Footer'
+import BottomTabBar from '@src/component/navigation/BottomTabBar'
 import SectionProvider from '@src/component/Section/Provider'
 import { LightStatusBar } from '@src/component/StatusBar'
 import { URLS } from '@src/config/url'
@@ -503,10 +503,7 @@ class HomeUI extends React.Component {
             </View>
           </ScrollView>
         </Content>
-        <Footer
-          currentScreen='PublicHome'
-          renderQuickTour={this.renderQuickTour}
-        />
+        <BottomTabBar currentScreen='PublicHome' />
         <SupportChat forceShow renderQuickTour={this.renderQuickTour} />
       </Container>
       

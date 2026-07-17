@@ -99,7 +99,7 @@ const styles = {
   container: {
     position: 'absolute',
     right: 15,
-    bottom: 75,
+    bottom: 100,
     width: 68,
     height: 68,
     zIndex: 0

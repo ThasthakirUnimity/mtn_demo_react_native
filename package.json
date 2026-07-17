@@ -20,6 +20,7 @@
     "@react-native-firebase/installations": "14.11.0",
     "@react-native-firebase/messaging": "14.11.0",
     "@react-native-firebase/perf": "14.11.0",
+    "@react-navigation/bottom-tabs": "^6.6.1",
     "@react-navigation/drawer": "6.4.1",
     "@react-navigation/native": "6.0.10",
     "@react-navigation/native-stack": "6.6.2",

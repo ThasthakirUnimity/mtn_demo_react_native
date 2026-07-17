@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SupportChat } from "@src/utility/supportChat";
+import BottomTabNavigator from "@src/navigation/BottomTabNavigator";
 
 import {
   navigationRef,
@@ -49,6 +50,14 @@ const Navigator = () => {
           name="NavRoot"
           component={NavRoot}
         />
+
+        {/* ── Main app shell with floating bottom tab bar ── */}
+        <Stack.Screen
+          options={screenOptions}
+          name="MainTabs"
+          component={BottomTabNavigator}
+        />
+
         <Stack.Screen
           options={screenOptions}
           name="PublicHome"
