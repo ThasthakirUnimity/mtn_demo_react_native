@@ -77,7 +77,8 @@ export default {
   tariffHeader: {
     fontFamily: FAMILY.MTN_MEDIUM,
     fontSize: SIZE.SIZE_16,
-    color: COLOR.DEFAULT
+    color: COLOR.DEFAULT,
+    marginBottom: 2
   },
   selectText: {
     fontFamily: FAMILY.MTN_REGULAR,

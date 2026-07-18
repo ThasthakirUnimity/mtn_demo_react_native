@@ -50,11 +50,11 @@ const BalanceUsageCard = ({
         /* ────────── POSTPAID ────────── */
         <>
           <View style={styles.busTopRow}>
-            <View>
+            {/* <View>
               <Text style={styles.busLabel}>{__('Current Bill')}</Text>
               <Text style={styles.busBillAmt}>{planPrice}</Text>
-            </View>
-            <Icon name='chevron-right' type='Feather' style={styles.busChevron} />
+            </View> */}
+            {/* <Icon name='chevron-right' type='Feather' style={styles.busChevron} /> */}
           </View>
           <View style={styles.busUsageList}>
             <UsageRow

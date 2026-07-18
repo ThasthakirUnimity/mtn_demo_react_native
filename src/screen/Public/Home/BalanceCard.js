@@ -5,6 +5,7 @@ import { navigate } from '@src/navigation'
 import { __ } from '@src/utility/translation'
 import { CURRENCY } from '@src/theme/typography'
 import { logClickEvent } from '@src/utility/analytics'
+import { store } from '@src/store'
 import BalanceUsageCard from './components/BalanceUsageCard'
 import CurrentPlanCard from './components/CurrentPlanCard'
 import styles from './styles'
@@ -115,7 +116,19 @@ const BalanceCard = ({ planDetails, renderQuickTour }) => {
         }}
         onChangePlan={() => {
           logClickEvent('DashboardViewPlans')
-          navigate(isPostpaid ? 'UserTariffPlan' : 'UserBundleList')
+          if (isPostpaid) {
+            navigate('UserTariffPlan')
+          } else {
+            const session = store.getState().session
+            const selectedNumber = session?.numbers?.[session?.numberIndex]
+            navigate('UserBundleList', {
+              profile: {
+                name: selectedNumber?.name || '',
+                mobilenumber: selectedNumber?.number || plan.mobilenumber || '',
+                avatar: selectedNumber?.profile_image || null,
+              }
+            })
+          }
         }}
       />
     </View>

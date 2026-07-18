@@ -4,7 +4,7 @@ import urlParse from 'url-parse'
 
 import { NEWS_API_TOKEN, NEWS_API_URL } from '@src/config/env'
 
-const _str = (data, max = 300) => {
+const _str = (data, max = Infinity) => {
   if (data == null) return '-'
   const s = typeof data === 'string' ? data : JSON.stringify(data)
   return s.length > max ? s.slice(0, max) + '…' : s

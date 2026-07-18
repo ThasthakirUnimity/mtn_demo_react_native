@@ -16,8 +16,13 @@ const CurrentPlan = ({ currentPlan, fetching }) => {
   return (
     <>
       <Text style={styles.header}>{__('Your Current Plan')}</Text>
+      
       <View style={styles.profileContent}>
+        {!!currentPlan.title && (
+        <Text style={styles.tariffHeader}>{currentPlan.title}</Text>
+      )}
         <View style={styles.profilePlans}>
+          
           <View style={styles.layout}>
             <Text style={styles.planValidity}>{__('Validity')}</Text>
             <Text style={styles.validityDays}>{currentPlan.Validity}</Text>

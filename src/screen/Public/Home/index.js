@@ -157,16 +157,19 @@ class HomeUI extends React.Component {
           this.props.session.numbers[this.props.session.numberIndex]
         phone = selectedNumber.number
       }
-      const params = { mobilenumber: phone }
-      const r = (await http.post(URLS.USER_BALANCE_PREPAID)).data
+      const r = (await http.post(URLS.USER_BALANCE_PREPAID, { mobilenumber: phone })).data
       if (r?.result?.type) {
         const data = {}
-        if (r.result.type == 'Prepaid') {
+        // API always returns primary account data; override type with the
+        // session's actual selected number type for correct UI routing.
+        const selectedNumber = this.props.session.numbers[this.props.session.numberIndex]
+        const resolvedType = selectedNumber?.type || r.result.type
+        if (resolvedType == 'Prepaid') {
           const _data = parseInt(r.result.data, 10) || 0
           const _dataBalance = parseInt(r.result.data_balance, 10) || 0
           const _dataCompleted = (_data - _dataBalance) || 0
           data.data_percentage = _dataCompleted / _data * 100
-        } else if (r.result.type == 'Postpaid') {
+        } else if (resolvedType == 'Postpaid') {
           const _data = parseInt(r.result.data, 10) || 0
           const _dataBalance = parseInt(r.result.data_balance, 10) || 0
           const _dataCompleted = (_data - _dataBalance) || 0
@@ -182,7 +185,7 @@ class HomeUI extends React.Component {
           const _smsCompleted = (_sms - _smsBalance) || 0
           data.sms_percentage = _smsCompleted / _sms * 100
         }
-        const planDetails = [{ ...r.result, ...data }]
+        const planDetails = [{ ...r.result, ...data, type: resolvedType }]
         await this.promisedSetState({
           planDetails,
           fetchingPlans: false

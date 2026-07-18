@@ -22,10 +22,11 @@ const Tariff = props => {
 
     return (
       <FlatList
-        horizontal
         data={props.list}
-        showsHorizontalScrollIndicator={false}
+        scrollEnabled={false}
+        showsVerticalScrollIndicator={false}
         renderItem={renderItem}
+        keyExtractor={item => String(item.id)}
       />
     );
   };

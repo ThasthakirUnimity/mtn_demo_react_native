@@ -159,6 +159,7 @@ class Plan extends React.Component {
     try {
       const params = { categoryId, subCategoryId }
       const r = (await http.get(URLS.TARIFF_PLAN, { params })).data
+      console.log('fetchingTariffs', categoryId, subCategoryId, r)
       if (Array.isArray(r?.response?.rows)) {
         await this.promisedSetState({
           tariffs: { ...this.state.tariffs, [categoryId]: r.response.rows }
