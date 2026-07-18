@@ -50,6 +50,8 @@ instance.interceptors.request.use(async (config) => {
     config.params.lang = state.setting.languageCode
   }
 
+  // ────────────────────────────────────────────────────────────────
+
   config.url = parsed.href
 
   /* if (state.setting.languageCode && state.setting.languageCode != state.setting.languageCodeDefault) {

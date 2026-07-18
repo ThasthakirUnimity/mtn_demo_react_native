@@ -18,7 +18,7 @@ const Item = ({ item }) => {
           navigate('PublicOfferView', { id: item.id })
         }}
       >
-        <Image source={{ uri: item.offer_screen_image }} style={styles.offerImg} />
+        <Image source={{ uri: item.offer_screen_image }} style={styles.offerImg}  resizeMode='contain'/>
       </Button>
       <View style={theme.row}>
         <Text style={styles.offerText}>{item.title}</Text>

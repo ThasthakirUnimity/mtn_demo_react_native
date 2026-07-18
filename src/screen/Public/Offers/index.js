@@ -12,6 +12,7 @@ import List from './List'
 import { httpCms } from '@src/utility/http'
 import { URLS } from '@src/config/url'
 import Placeholder from './Placeholder'
+import { store } from '@src/store'
 
 class Offers extends React.Component {
   constructor (props) {
@@ -36,13 +37,17 @@ class Offers extends React.Component {
   async fetchOffers () {
     const state = {}
     try {
-      const r = (await httpCms.get(URLS.OFFERS)).data
+      const brandId = store.getState().brand?.brandId
+      const url = brandId ? URLS.BRAND_OFFERS(brandId) : URLS.OFFERS
+      const r = (await httpCms.get(url)).data
+      // BRAND_OFFERS returns an array directly; OFFERS returns { rows: [] }
+      const rows = r.rows || (Array.isArray(r) ? r : (r ? [r] : []))
       state.recommended = []
       state.list = []
-      r.rows.forEach(offer => {
-        if (offer.flag == 'recommendedoffers') {
+      rows.forEach(offer => {
+        if (offer.flag === 'recommendedoffers') {
           state.recommended.push(offer)
-        } else if (offer.flag == 'offersonlyforyou') {
+        } else if (offer.flag === 'offersonlyforyou') {
           state.list.push(offer)
         }
       })

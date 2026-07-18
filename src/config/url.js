@@ -1,3 +1,17 @@
+/**
+ * Maps the brand string value (from Redux brand.brandId) to the
+ * numeric brand_id expected by the API.
+ *   Vodafone  → 1
+ *   My TPG    → 2
+ *   iinet     → 3
+ *   (others)  → 4
+ */
+export const BRAND_ID_MAP = {
+  vodafone: 1,
+  mytpg:    2,
+  iinet:    3,
+}
+
 export const URLS = {
   LOGS: '/logs',
 
@@ -29,6 +43,7 @@ export const URLS = {
 
   COUPONS: '/api/v1/content/coupons',
   OFFERS: '/api/v1/content/offers',
+  BRAND_OFFERS: (brandId) => `/api/v1/content/offers-test/${brandId}`,
 
   QUICK_TOUR: '/cms/content/quick-tour',
   // STORE: '/api/v1/content/store',

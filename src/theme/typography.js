@@ -2,6 +2,7 @@ const cmsJson = {
   "COLOR": {
     "PRIMARY": "#e02828",
     "SECONDARY": "#B80000",
+ 
     "DEFAULT": "#4C4D4F",
     "PRIMARY_LIGHT": "#f1bec8",
     "BG": "#FFFDFC",

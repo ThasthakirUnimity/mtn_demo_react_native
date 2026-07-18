@@ -13,9 +13,9 @@ const BAR_MARGIN_BOTTOM = 16;
 
 // How far the FAB center sits above the bar's top edge.
 // FAB center = BAR top - FAB_LIFT_ABOVE → FAB overlaps the bar from above.
-const FAB_LIFT_ABOVE = 20;
+const FAB_LIFT_ABOVE = 24;
 // Position of fabOverlay's top edge relative to bar top:
-// fabOverlay.top = -(FAB_SIZE/2 + FAB_LIFT_ABOVE) = -(33 + 20) = -53
+// fabOverlay.top = -(FAB_SIZE/2 + FAB_LIFT_ABOVE) = -(37 + 24) = -61
 const FAB_OVERLAY_TOP = -(FAB_SIZE / 2 + FAB_LIFT_ABOVE);
 // ─────────────────────────────────────────────────────────────────────────────
 

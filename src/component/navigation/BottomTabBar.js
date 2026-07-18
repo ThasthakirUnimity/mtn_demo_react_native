@@ -7,12 +7,15 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 
 import { navigate } from '@src/navigation';
 import TabButton, { TAB_ICON_SIZE } from './TabButton';
+import CenterFab, { FAB_SIZE } from './CenterFab';
+import { COLOR } from '@src/theme/typography';
 
 // ─── Layout constants ─────────────────────────────────────────────────────────
 const BAR_HEIGHT = 80;
 const BAR_RADIUS = 45;
 const BAR_MARGIN_H = 22;
 const BAR_MARGIN_BOTTOM = 16;
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
@@ -58,6 +61,8 @@ const TABS = [
       <SimpleLineIcons name="handbag" size={size} color={color} />
     ),
   },
+  // Center FAB slot — no screen, no icon; CenterFab renders above this gap
+  { key: 'fab', isFab: true },
   {
     key: 'play',
     screen: 'PlayHome',
@@ -105,6 +110,10 @@ const BottomTabBar = ({ currentScreen, onTabPress }) => {
     >
       <View style={styles.bar}>
         {TABS.map((tab, index) => {
+          if (tab.isFab) {
+            // Empty spacer so the 4 real tabs sit 2 left / 2 right of the FAB
+            return <View key="fab-slot" style={styles.fabSlot} />;
+          }
           const isFocused = activeIndex === index;
           return (
             <TabButton
@@ -117,6 +126,11 @@ const BottomTabBar = ({ currentScreen, onTabPress }) => {
             />
           );
         })}
+      </View>
+
+      {/* CenterFab — floats above the center of the bar */}
+      <View pointerEvents="box-none" style={styles.fabOverlay}>
+        <CenterFab />
       </View>
     </View>
   );
@@ -133,7 +147,7 @@ const styles = StyleSheet.create({
     height: BAR_HEIGHT,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLOR.LIGHT,
     borderRadius: BAR_RADIUS,
     ...Platform.select({
       ios: {
@@ -146,6 +160,16 @@ const styles = StyleSheet.create({
         elevation: 10,
       },
     }),
+  },
+  fabSlot: {
+    width: FAB_SIZE,
+  },
+  fabOverlay: {
+    position: 'absolute',
+    // top: FAB_OVERLAY_TOP,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
   },
 });
 

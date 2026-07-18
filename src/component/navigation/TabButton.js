@@ -11,10 +11,7 @@ import Animated, {
 import { COLOR } from '@src/theme/typography';
 
 const INACTIVE_COLOR = '#9EA3AE';
-const ACTIVE_ICON_COLOR = COLOR.PRIMARY;  // app primary colour from theme';
-const PRIMARY = COLOR.PRIMARY;          // app primary colour from theme
 export const TAB_ICON_SIZE = 26;
-const DOT_COLOR = COLOR.PRIMARY;  // app primary colour from theme
 
 // Pill dimensions
 const PILL_HEIGHT = 40;
@@ -84,11 +81,11 @@ const TabButton = ({ isFocused, onPress, onLongPress, label, renderIcon }) => {
 
       
         {renderIcon(
-          isFocused ? ACTIVE_ICON_COLOR : INACTIVE_COLOR,
+          isFocused ? COLOR.PRIMARY : INACTIVE_COLOR,
           TAB_ICON_SIZE,
         )}
      
-      <Animated.View style={[styles.dot, dotAnimatedStyle]} />
+      <Animated.View style={[styles.dot, dotAnimatedStyle, { backgroundColor: COLOR.PRIMARY }]} />
     </TouchableOpacity>
   );
 };
@@ -105,8 +102,8 @@ const styles = StyleSheet.create({
     width: 5,
     height: 5,
     borderRadius: 2.5,
-    backgroundColor: DOT_COLOR,
     marginTop: 5,
+    color: COLOR.PRIMARY,
     },
   pill: {
     position: 'absolute',

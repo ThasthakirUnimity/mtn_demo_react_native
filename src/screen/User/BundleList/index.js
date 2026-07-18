@@ -44,6 +44,7 @@ class BundleList extends React.Component {
       buildBundlesSelected: {},
 
       selectedSubCategory: null,
+      searchQuery: '',
 
       cart: {
         items: []
@@ -68,6 +69,7 @@ class BundleList extends React.Component {
     this.renderProfile = this.renderProfile.bind(this)
     this.renderFooter = this.renderFooter.bind(this)
     this.selectSubCategory = this.selectSubCategory.bind(this)
+    this.onSearchChange = this.onSearchChange.bind(this)
 
     this.refBundleView = createRef()
   }
@@ -252,6 +254,10 @@ class BundleList extends React.Component {
     this.setState({ selectedSubCategory: next })
   }
 
+  onSearchChange(text) {
+    this.setState({ searchQuery: text })
+  }
+
   async addToCart(bundle) {
     logClickEvent('BundleListAddToCart', {
       title: bundle.ProductName
@@ -373,19 +379,32 @@ class BundleList extends React.Component {
   }
 
   renderList(category) {
-    const subcats = this.state.selectedSubCategory
-      ? category.subcategory.filter(sc => sc.id == this.state.selectedSubCategory)
+    const { searchQuery, selectedSubCategory } = this.state
+    const query = searchQuery.trim().toLowerCase()
+
+    const subcats = selectedSubCategory
+      ? category.subcategory.filter(sc => sc.id == selectedSubCategory)
       : category.subcategory
     return (
       <View>
         {
           subcats.map(subCategory => {
             const bundle = this.state.bundles[subCategory.id] || {}
+            // Filter bundle items by search query
+            const filteredList = query
+              ? (bundle?.list || []).filter(item =>
+                  String(item.ProductName || '').toLowerCase().includes(query) ||
+                  String(item.Description || '').toLowerCase().includes(query) ||
+                  String(item.Data || '').toLowerCase().includes(query) ||
+                  String(item.Price || '').includes(query)
+                )
+              : (bundle?.list || [])
+            if (!bundle.fetching && filteredList.length === 0) return null
             return (
               <List
                 key={subCategory.id}
                 title={subCategory.title}
-                list={bundle?.list || []}
+                list={filteredList}
                 fetching={bundle.fetching}
                 addToCart={this.addToCart}
                 buyNow={this.buyNow}
@@ -521,6 +540,10 @@ class BundleList extends React.Component {
                 style={styles.gradSearchInput}
                 placeholder='Search plans'
                 placeholderTextColor={COLOR.GREY_LIGHT}
+                value={this.state.searchQuery}
+                onChangeText={this.onSearchChange}
+                returnKeyType='search'
+                clearButtonMode='while-editing'
               />
               <Icon name='magnify' type='MaterialCommunityIcons' style={styles.gradSearchIcon} />
             </View>

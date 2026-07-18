@@ -21,7 +21,7 @@ const Recommended = (props) => {
       <View>
         <FlatList
           data={props.list}
-          horizontal
+          
           contentContainerStyle={styles.offerContainer}
           showsHorizontalScrollIndicator={false}
           renderItem={renderItem}

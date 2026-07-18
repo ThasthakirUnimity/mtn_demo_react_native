@@ -619,7 +619,6 @@ export default {
   },
   offerBtn: {
     flex: 1,
-    width: 330,
     height: 180,
     borderRadius: 10,
     marginRight: 5,

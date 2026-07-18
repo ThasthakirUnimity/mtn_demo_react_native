@@ -2,7 +2,7 @@ import axios from 'axios'
 import perf from '@react-native-firebase/perf'
 
 import { API_URL } from '@src/config/env'
-import { URLS } from '@src/config/url'
+import { URLS, BRAND_ID_MAP } from '@src/config/url'
 import { notifySessionExpired } from '@src/helper/user'
 import { store } from '@src/store'
 
@@ -40,6 +40,50 @@ instance.interceptors.request.use(async (config) => {
   if (state.session.isLoggedIn) {
     config.headers['x-access-token'] = state.session.token
   }
+
+  // ── Brand ID injection (node API only) ─────────────────────────
+  // GET  → query param  ?brand_id=1
+  // POST → body param   { brand_id: 1, ... }
+  const BRAND_ID_GET_PATHS = [
+    '/tariff/currentplan',
+    '/tariff/category',
+    '/tariff/plan',
+    '/tariff/search',
+    '/bundle/category',
+    '/bundle/viewCatalogue',
+    '/bundle/build',
+    '/bundle/search',
+    '/postpaid/category',
+    '/postpaid',
+    '/postpaid/plan',
+  ]
+  const BRAND_ID_POST_PATHS = [
+    '/tariff/activate',
+    '/balance/data',
+  ]
+  const brandValue = state.brand?.brandId
+  if (brandValue) {
+    const numericBrandId = BRAND_ID_MAP[brandValue] ?? 4
+    const method = (config.method || 'get').toLowerCase()
+    const requestPath = (config.url || '').split('?')[0]
+    if (method === 'get' && BRAND_ID_GET_PATHS.some(p => requestPath.startsWith(p))) {
+      const sep = config.url.includes('?') ? '&' : '?'
+      config.url = `${config.url}${sep}brand_id=${numericBrandId}`
+    } else if (
+      (method === 'post' || method === 'put' || method === 'patch') &&
+      BRAND_ID_POST_PATHS.some(p => requestPath.startsWith(p))
+    ) {
+      let body = {}
+      if (typeof config.data === 'string') {
+        try { body = JSON.parse(config.data) } catch (_) {}
+      } else if (config.data && typeof config.data === 'object') {
+        body = { ...config.data }
+      }
+      body.brand_id = numericBrandId
+      config.data = JSON.stringify(body)
+    }
+  }
+  // ────────────────────────────────────────────────────────────────
 
   if (__DEV__ && !_shouldSkipLog(config.baseURL + config.url)) {
     console.log(

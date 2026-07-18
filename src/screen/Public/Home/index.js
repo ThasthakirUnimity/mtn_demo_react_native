@@ -193,9 +193,13 @@ class HomeUI extends React.Component {
 
   async fetchOffers () {
     try {
-      const r = (await httpCms.get(URLS.OFFERS)).data
+      const brandId = this.props.brand?.brandId
+      const url = brandId ? URLS.BRAND_OFFERS(brandId) : URLS.OFFERS
+      const r = (await httpCms.get(url)).data
+      // BRAND_OFFERS returns an array directly; OFFERS returns { rows: [] }
+      const list = r.rows || (Array.isArray(r) ? r : (r ? [r] : []))
       await this.promisedSetState({
-        offers: r.rows
+        offers: list
       })
     } catch (e) {}
     await this.promisedSetState({
@@ -541,4 +545,4 @@ const Home = (props) => {
   return <HomeUI key={key} {...props} />
 }
 
-export default connect(({ session, setting }) => ({ session, setting }))(Home)
+export default connect(({ session, setting, brand }) => ({ session, setting, brand }))(Home)

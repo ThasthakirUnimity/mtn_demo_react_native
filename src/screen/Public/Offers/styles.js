@@ -23,7 +23,7 @@ export default {
     paddingHorizontal: 10
   },
   offerContent: {
-    width: 260,
+    // width: 260,
     backgroundColor: COLOR.LIGHT,
     borderRadius: 13,
     shadowColor: COLOR.GREY_LIGHT,
@@ -51,7 +51,7 @@ export default {
     height: 260
   },
   offerImg: {
-    width: 260,
+    // width: 260,
     height: '100%',
     borderRadius: 13
   },

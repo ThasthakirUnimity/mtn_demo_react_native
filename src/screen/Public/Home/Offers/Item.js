@@ -19,15 +19,15 @@ const Item = ({ item }) => {
       }}
       style={styles.offerBtn}
     >
-      <Image source={{ uri: item.home_screen_image }} style={styles.offerImg} />
+      <Image source={{ uri: item.home_screen_image }} style={styles.offerImg} resizeMode="contain" />
       <View style={styles.offerContent}>
         <View style={styles.offerBox}>
-          <View style={styles.offerHeader}>
+          {/* <View style={styles.offerHeader}>
             <Text style={styles.offerText}>{item.title}</Text>
-          </View>
-          <View style={styles.offerBot}>
+          </View> */}
+          {/* <View style={styles.offerBot}>
             <Text style={styles.offerExpiryText}>{dateUtil.format(item.expiry)}</Text>
-          </View>
+          </View> */}
         </View>
       </View>
     </Button>
