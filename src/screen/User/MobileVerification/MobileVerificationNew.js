@@ -110,7 +110,7 @@ class MobileVerificationNew extends Component {
 
       await Support.showSuccess({
         layout: "toast",
-        message: "Successfully sent",
+        message: __('Successfully sent'),
         hideDelay: 2500,
       });
 
@@ -128,9 +128,9 @@ class MobileVerificationNew extends Component {
     };
     const errors = [];
     if (isEmpty(otpField)) {
-      errors.push("Please enter your verification code");
+      errors.push(__('Please enter your verification code'));
     } else if (!values[otpField].match(/^\d{4}$/)) {
-      errors.push(`Please enter your ${codeLength} digit code`);
+      errors.push(__('Please enter your 4 digit code'));
     }
 
     if (errors.length) {
@@ -191,6 +191,7 @@ class MobileVerificationNew extends Component {
         }
       }
     } catch (e) {
+      console.log("MobileVerificationNew::onSubmit::error", e);
       await this.promisedSetState({
         verified: 2,
       });
@@ -271,7 +272,7 @@ class MobileVerificationNew extends Component {
               </Text>
 
               <Text style={styles.verifyDesc}>
-                {__("Enter 4 digit verification code sent to your number")}{" "}
+                {__('Enter 4 digit verification code sent to your Mobile Number')}{" "}
                 {this.state.mobilenumber}
               </Text>
 
@@ -279,12 +280,12 @@ class MobileVerificationNew extends Component {
               <View style={styles.otpRow}>{this.renderCodeInput()}</View>
 
               <Text style={styles.otpNote}>
-                {__("We will send you a one-time password (OTP).")}
+                {__('We will send you one time password(OTP)')}
               </Text>
 
               {this.renderResendLink(primaryColor)}
 
-              <Button style={[styles.verifyBtn, { backgroundColor: primaryColor }]} onPress={this.onSubmit}>
+              <Button style={[styles.verifyBtn, { backgroundColor: COLOR.PRIMARY }]} onPress={this.onSubmit}>
                 <Text style={styles.verifyBtnText}>{__("Verify")}</Text>
               </Button>
             </ScrollView>
@@ -411,7 +412,7 @@ const mapStateToProps = (state) => {
   console.log("APP_DETAILS:", designTokens);
   return {
     appLogo: designTokens?.APP_DETAILS?.APP_LOGO || null,
-    gradientColors: Array.isArray(designTokens?.GRADIENT_COLOURS) ? designTokens.GRADIENT_COLOURS : null,
+    gradientColors: designTokens?.GRADIENT_COLOURS ? Object.values(designTokens.GRADIENT_COLOURS) : null,
     primaryColor: designTokens?.COLORS?.PRIMARY || null,
   };
 };

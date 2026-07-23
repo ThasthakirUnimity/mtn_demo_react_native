@@ -9,10 +9,11 @@ import { __ } from '@src/utility/translation'
 const Item = ({ item, openView, repeatRecharge }) => {
   const _openView = () => openView(item)
   const _repeatRecharge = () => repeatRecharge(item)
+  console.log('Item render', item) // Debugging: Log when the component renders and the item data
   return (
     <View style={styles.planItem}>
       <View style={styles.planRow}>
-        <Text style={styles.planTitle}>{__('Voice Bundle')}</Text>
+        <Text style={styles.planTitle}>{item?.plan?.ProductName}</Text>
       </View>
       <View style={styles.planContent}>
         <View style={styles.planInitial}>

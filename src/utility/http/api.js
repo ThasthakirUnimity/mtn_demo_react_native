@@ -56,6 +56,7 @@ instance.interceptors.request.use(async (config) => {
     '/postpaid/category',
     '/postpaid',
     '/postpaid/plan',
+    '/recharge/recentRecharge'
   ]
   const BRAND_ID_POST_PATHS = [
     '/tariff/activate',

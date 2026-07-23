@@ -27,7 +27,7 @@ import {
 } from "@src/utility/analytics";
 import { initiateUserSession } from "@src/helper/user";
 import auth0 from "@src/utility/auth0";
-import { COLOR, FAMILY, SIZE } from "@src/theme/typography";
+import { COLOR, FAMILY, GRADIENT_COLOURS, SIZE } from "@src/theme/typography";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -35,17 +35,17 @@ const CAROUSEL_ITEMS = [
   {
     id: "1",
     IMAGE: require("@asset/images/carousel_1.png"),
-    TITLE: "RECHARGE &\nPAY BILLS",
+    TITLE: "RECHARGE & PAY BILLS",
   },
   {
     id: "2",
     IMAGE: require("@asset/images/carousel_2.png"),
-    TITLE: "FAST & SECURE\nPAYMENTS",
+    TITLE: "FAST & SECURE PAYMENTS",
   },
   {
     id: "3",
     IMAGE: require("@asset/images/carousel_3.png"),
-    TITLE: "EARN CASHBACK\nREWARDS",
+    TITLE: "EARN CASHBACK REWARDS",
   },
 ];
 
@@ -112,11 +112,11 @@ class LoginNew extends Component {
     const isEmpty = (key) =>
       !(typeof values[key] !== "undefined" && values[key] !== "");
     const errors = [];
-    if (isEmpty("country")) errors.push("Please select a country");
+    if (isEmpty("country")) errors.push(__('Please select a country'));
     if (isEmpty("mobilenumber")) {
-      errors.push("Please enter your mobile number");
+      errors.push(__('Please enter your mobile number'));
     } else if (!values.mobilenumber.match(/^\d{10}$/)) {
-      errors.push("Please enter a valid mobile number");
+      errors.push(__('Please enter a valid mobile number'));
     }
     if (errors.length) throw new Error(errors.join("\n"));
   }
@@ -264,7 +264,7 @@ class LoginNew extends Component {
         </View>
         {/* Text: below image, left-aligned from centre */}
         <View style={styles.slideTextWrap}>
-          <Text style={styles.slideTitle}>{item.TITLE}</Text>
+          <Text style={styles.slideTitle}>{__(item.TITLE)}</Text>
         </View>
       </View>
     );
@@ -315,13 +315,13 @@ class LoginNew extends Component {
   // ─── Form ─────────────────────────────────────────────────────────────────
 
   renderForm({ values, handleChange, handleBlur, submitForm }) {
-    const primaryColor = this.props.primaryColor || "#6B35D9";
+    const primaryColor = COLOR.PRIMARY;
     
     return (
       <View>
         <Text style={styles.loginTitle}>{__("Login")}</Text>
         <Text style={styles.loginDesc}>
-          {__("Enter your phone number to log in.")}
+          {__('Enter your phone number to log in')}
         </Text>
 
         {/* Country + Phone input */}
@@ -349,7 +349,7 @@ class LoginNew extends Component {
         </View>
 
         <Text style={styles.otpNote}>
-          {__("We will send you a one-time password (OTP)")}
+          {__('We will send you one time password(OTP)')}
         </Text>
 
         <Button style={[styles.sendBtn, { backgroundColor: primaryColor }]} onPress={submitForm}>
@@ -404,7 +404,7 @@ class LoginNew extends Component {
 
   render() {
     const carouselItems = this.props.loginCarousel || CAROUSEL_ITEMS;
-    const gradientColors = Array.isArray(this.props.gradientColors) && this.props.gradientColors.length ? this.props.gradientColors : ["#0D0B2E", "#1A0E5C", "#2C1670"];
+    const gradientColors =  Object.values(GRADIENT_COLOURS);
     
     return (
       <LinearGradient
@@ -688,7 +688,7 @@ const mapStateToProps = (state) => {
   return {
     appLogo: designTokens?.APP_DETAILS?.APP_LOGO || null,
     loginCarousel: designTokens?.LOGIN_CAROUSEL || null,
-    gradientColors: Array.isArray(designTokens?.GRADIENT_COLOURS) ? designTokens.GRADIENT_COLOURS : null,
+    gradientColors: designTokens?.GRADIENT_COLOURS ? Object.values(designTokens.GRADIENT_COLOURS) : null,
     primaryColor: designTokens?.COLORS?.PRIMARY || null,
   };
 };

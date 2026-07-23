@@ -1,39 +1,34 @@
 const cmsJson = {
   "COLOR": {
-    "PRIMARY": "#e02828",
-    "SECONDARY": "#B80000",
- 
+    "PRIMARY": "#E60000",
     "DEFAULT": "#4C4D4F",
-    "PRIMARY_LIGHT": "#f1bec8",
     "BG": "#FFFDFC",
     "NEWS_BG": "#F3F3F3",
     "GOLD": "#EAB900",
     "BLUE": "#7AC2E4",
-    "LIGHT_BLUE": "#C2E9FF",
-    "LIGHT_ORANGE": "#FFDBB2",
-
-    "LIGHT_YELLOW": "#FFE8C2",
-    "LIGHT_GREEN": "#C5F0D4",
-    "BUTTON_BG": "#E02828",
     "BUTTON_TEXT": "#FFFFFF",
     "BLACK": "#000000",
     "DARK": "#4C4D4F",
+    "DARK_2": "#4C4D4F",
     "LIGHT": "#FFFFFF",
-
     "SMOKE": "#F7FFFF",
     "SMOKE_DARK": "#E7E7E7",
     "SMOKE_DARK2": "#D9DBE2",
     "SMOKE_DARK3": "#D2D2DE",
-
     "GREY": "#666666",
     "GREY_LIGHT": "#999999",
     "GREY_DARK": "#333333",
-
     "SUCCESS": "#198754",
     "WARNING": "#FFC107",
     "ERROR": "#DF002C",
+    "SHADOW": "#CCCCCC",
+    "SECONDARY": "#CC0000",
+    "PRIMARY_LIGHT": "#e28c8c",
+    "LIGHT_YELLOW": "#FFF9E6",
+    "LIGHT_GREEN": "#E8F5E9",
+    "LIGHT_BLUE": "#E3F2FD",
+    "LIGHT_ORANGE": "#FFF3E0"
 
-    "SHADOW": "#CCCCCC"
   },
 
   "FAMILY": {
@@ -43,6 +38,7 @@ const cmsJson = {
     "MTN_BOLD": "MTNBrighterSans-Bold",
     "MTN_EXTRA_BOLD": "MTNBrighterSans-ExtraBold",
     "MTN_EXTRA_LIGHT": "MTNBrighterSans-ExtraLight"
+
   },
 
   "SIZE": {
@@ -72,15 +68,37 @@ const cmsJson = {
   },
 
   "CURRENCY": {
-    "SYMBOL": "A$",
-    "CURRENCY": "AUD"
+    "SYMBOL": "QR",
+    "CURRENCY": "QAR"
   },
 
   "APP_DETAILS": {
-    "APP_NAME": "Australia",
+    "APP_NAME": "Qatar",
     "APP_NAME_PREFIX": "My ",
     "APP_WALLET_NAME": "Wallet"
-  }
+  },
+  "GRADIENT_COLOURS": {
+    "COLOR_1": "#150983",
+    "COLOR_2": "#243474",
+    "COLOR_3": "#4720a2"
+  },
+  "LOGIN_CAROUSEL": [
+    {
+      "id": "1",
+      "IMAGE": "https://selfcarecmsqatar.betabasket.net/sites/default/files/2026-07/carousel_1.png",
+      "TITLE": "RECHARGE &\nPAY BILLS"
+    },
+    {
+      "id": "2",
+      "TITLE": "carousel_2",
+      "IMAGE": "https://selfcarecmsqatar.betabasket.net/sites/default/files/2026-07/carousel_2.png"
+    },
+    {
+      "id": "3",
+      "IMAGE": "https://selfcarecmsqatar.betabasket.net/sites/default/files/2026-07/carousel_3.png",
+      "TITLE": "EARN CASHBACK\nREWARDS"
+    }
+  ]
 }
 
 export const COLOR = { ...cmsJson.COLOR };
@@ -88,3 +106,5 @@ export const FAMILY = { ...cmsJson.FAMILY };
 export const SIZE = { ...cmsJson.SIZE };
 export const CURRENCY = { ...cmsJson.CURRENCY };
 export const APP_DETAILS = { ...cmsJson.APP_DETAILS };
+export const GRADIENT_COLOURS = { ...cmsJson.GRADIENT_COLOURS };
+export const LOGIN_CAROUSEL = [...cmsJson.LOGIN_CAROUSEL];
